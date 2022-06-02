@@ -1120,3 +1120,69 @@ Oct 28 2021 11:56:18
 Oct 28 2021 11:56:20
 {"type":8,"message":"Constant ABSPATH already defined","file":"\/var\/www\/html\/wp-config.php","line":20}
 
+Jun 02 2022 07:25:21
+{"type":8,"message":"Constant ABSPATH already defined","file":"\/var\/www\/html\/wp-config.php","line":20}
+
+Jun 02 2022 07:25:22
+{"type":8,"message":"Constant ABSPATH already defined","file":"\/var\/www\/html\/wp-config.php","line":20}
+
+Jun 02 2022 07:25:22
+{"type":8,"message":"Constant ABSPATH already defined","file":"\/var\/www\/html\/wp-config.php","line":20}
+
+Jun 02 2022 07:25:22
+{"type":8,"message":"Constant ABSPATH already defined","file":"\/var\/www\/html\/wp-config.php","line":20}
+
+Jun 02 2022 07:25:22
+{"Number":2,"Message":"Use of undefined constant DB_CHARSET - assumed 'DB_CHARSET' (this will throw an Error in a future version of PHP)","File":"\/var\/www\/html\/wp-content\/plugins\/all-in-one-wp-migration\/lib\/model\/export\/class-ai1wm-export-config.php","Line":138}
+
+Jun 02 2022 07:25:22
+{"Number":2,"Message":"Use of undefined constant DB_COLLATE - assumed 'DB_COLLATE' (this will throw an Error in a future version of PHP)","File":"\/var\/www\/html\/wp-content\/plugins\/all-in-one-wp-migration\/lib\/model\/export\/class-ai1wm-export-config.php","Line":138}
+
+Jun 02 2022 07:25:22
+{"type":8,"message":"Constant ABSPATH already defined","file":"\/var\/www\/html\/wp-config.php","line":20}
+
+Jun 02 2022 07:25:22
+{"type":8,"message":"Constant ABSPATH already defined","file":"\/var\/www\/html\/wp-config.php","line":20}
+
+Jun 02 2022 07:25:22
+{"type":8,"message":"Constant ABSPATH already defined","file":"\/var\/www\/html\/wp-config.php","line":20}
+
+Jun 02 2022 07:25:22
+{"type":8,"message":"Constant ABSPATH already defined","file":"\/var\/www\/html\/wp-config.php","line":20}
+
+Jun 02 2022 07:25:22
+{"type":8,"message":"Constant ABSPATH already defined","file":"\/var\/www\/html\/wp-config.php","line":20}
+
+Jun 02 2022 07:25:23
+{"type":8,"message":"Constant ABSPATH already defined","file":"\/var\/www\/html\/wp-config.php","line":20}
+
+Jun 02 2022 07:25:23
+{"type":8,"message":"Constant ABSPATH already defined","file":"\/var\/www\/html\/wp-config.php","line":20}
+
+Jun 02 2022 07:25:23
+{"type":8,"message":"Constant ABSPATH already defined","file":"\/var\/www\/html\/wp-config.php","line":20}
+
+Jun 02 2022 07:25:23
+{"type":8,"message":"Constant ABSPATH already defined","file":"\/var\/www\/html\/wp-config.php","line":20}
+
+Jun 02 2022 07:25:23
+{"type":8,"message":"Constant ABSPATH already defined","file":"\/var\/www\/html\/wp-config.php","line":20}
+
+Jun 02 2022 07:25:23
+{"type":8,"message":"Constant ABSPATH already defined","file":"\/var\/www\/html\/wp-config.php","line":20}
+
+Jun 02 2022 07:25:23
+{"type":8,"message":"Constant ABSPATH already defined","file":"\/var\/www\/html\/wp-config.php","line":20}
+
+Jun 02 2022 07:25:23
+{"type":8,"message":"Constant ABSPATH already defined","file":"\/var\/www\/html\/wp-config.php","line":20}
+
+Jun 02 2022 07:25:24
+{"type":8,"message":"Constant ABSPATH already defined","file":"\/var\/www\/html\/wp-config.php","line":20}
+
+Jun 02 2022 07:25:24
+{"type":8,"message":"Constant ABSPATH already defined","file":"\/var\/www\/html\/wp-config.php","line":20}
+
+Jun 02 2022 07:25:25
+{"type":8,"message":"Constant ABSPATH already defined","file":"\/var\/www\/html\/wp-config.php","line":20}
+
