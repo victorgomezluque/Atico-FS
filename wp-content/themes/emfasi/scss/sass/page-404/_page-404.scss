@@ -1,0 +1,12 @@
+body.error404 {
+    #wrapper-navbar {
+        position: relative;
+    }
+
+    #error-404-wrapper {
+
+        @include desktop {
+
+        }
+    }
+}
