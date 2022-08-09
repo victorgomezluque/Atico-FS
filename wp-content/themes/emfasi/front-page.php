@@ -18,18 +18,16 @@ $args = array(
 );
 $cats = get_terms($args);
 
-$args1 = array(
-    'post_type' => 'product',
-);
-$features = get_post($args1);
-print_r($features);
+
 ?>
 <div class="page-wrapper wrapper-main" id="home">
     <main id="primary" class="site-main">
         <div class="left">
             <div class="content">
                 <div class="front-slide">
-                    <img src="/wp-content/uploads/2021/10/mt-sample-background.jpg" alt="">
+                    <a href="/contacto">
+                        <img src="/wp-content/uploads/2022/08/IMG-20220519-WA0032.jpg" alt="">
+                    </a>
                 </div>
             </div>
         </div>
@@ -51,7 +49,16 @@ print_r($features);
                 </div>
                 <div class="divider"></div>
                 <div class="slick-products">
-                    <?php echo do_shortcode('[featured_products class="outofstock" limit="100" order="DESC"]'); ?>
+                    <div class="item">
+                        <h2>Juvenil</h2>
+                        <div class="equipo_local">
+
+                        </div>
+                        <div class="equipo_visitante">
+
+                        </div>
+                    </div>
+
                 </div>
                 <div class="divider"></div>
             </div>
