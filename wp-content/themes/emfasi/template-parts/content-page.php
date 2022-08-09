@@ -14,6 +14,7 @@
 		<?php the_title('<h1 class="entry-title">', '</h1>'); ?>
 	</header><!-- .entry-header -->
 
+	
 	<?php underscores_post_thumbnail(); ?>
 
 	<div class="entry-content">

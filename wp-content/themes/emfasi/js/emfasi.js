@@ -1,12 +1,50 @@
 (function ($) {
 
+
     $(document).ready(function () {
 
+        $('.slick-products').slick({
+            infinite: false,
+            slidesToShow: 4,
+            slidesToScroll: 2,
+            dots: true,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            responsive: [{
+                breakpoint: 1500,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 2,
+                    dots: true,
+                },
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 2,
+                    dots: true,
+                },
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2.2,
+                    slidesToScroll: 2,
+                    dots: false,
+                },
+
+            }
+            ]
+        });
+
+        
         fixedServices();
 
-        setTimeout( function(){ 
+        setTimeout(function () {
             $('.cta-fixed').addClass('active');
-        }  , 2000 );
+        }, 2000);
 
         $(".cont--promoted-page .cont--item a").hover(
             function () {
@@ -192,7 +230,7 @@
 
         $("body").on('click', 'a[href^="#"]', function (event) {
             event.preventDefault();
-        
+
             $('html, body').animate({
                 scrollTop: $($.attr(this, 'href')).offset().top
             }, 700);

@@ -95,6 +95,13 @@ if ( ! function_exists( 'emfasi_scripts' ) ) {
 			wp_enqueue_style( 'jquery-ui-css', get_stylesheet_directory_uri() . '/js/jquery-ui/jquery-ui.min.css', array(), $the_theme->get( '1.0.x' ) );		
 			wp_enqueue_style( 'custom-styles', get_stylesheet_directory_uri() . '/scss/css/styles.css', array(), $the_theme->get( '1.x' ) );	
 
+			// SLICK CSS
+			wp_enqueue_style('slick-css', get_stylesheet_directory_uri() . '/css/slick.css', array(), $the_theme->get('2.x'));
+			wp_enqueue_style('slick-theme', get_stylesheet_directory_uri() . '/css/slick-theme.css', array(), $the_theme->get('2.x'));
+	
+			// SLICK JS
+			wp_register_script('slick-js-defer', (get_stylesheet_directory_uri() . '/js/slick.min.js'), true, '1.8.0', true);
+			wp_enqueue_script('slick-js-defer');
 	}
 }
 add_action( 'wp_enqueue_scripts', 'emfasi_scripts' );

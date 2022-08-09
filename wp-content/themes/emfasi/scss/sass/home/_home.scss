@@ -1,371 +1,454 @@
-.cas-exit-home-container {
-  height: 100vh;
+#home {
+  //TODO: afegir-ho a totes les pagines
+  min-height: 100vh;
+  position: relative;
+  background-color: $white;
 
-  //padding-top: 125px;
+  .site-main {
+    display: flex;
+    flex-direction: column;
 
-  @include tablet {
-    //padding-top: 135px;
-  }
+    @include desktop {
+      flex-direction: row;
+    }
 
-  @include desktop {
-    padding-top: 0;
-    //padding-top: 190px;
-  }
+    .left {
+      height: 340px;
 
-  @include desktop-1920 {
-    //padding-top: 245px;
-  }
-}
-
-.cas-exit-home {
-  padding-bottom: 50px;
-
-  .owl-stage-outer {
-    overflow: inherit;
-  }
-
-  .owl-dots {
-    @extend .container;
-  }
-
-  .owl-stage {
-    .owl-item {
-      &.active {
-        .cont__info .cont__info__info {
-          .cont--info-link {
-            opacity: 1;
-            transition: opacity 0.6s ease-in 1.4s;
-          }
-
-          .cont--info-inner {
-            opacity: 1;
-            transform: translateY(0);
-            transition: ease-in 0.8s all;
-            transition-delay: 0.8s;
-          }
-        }
+      @include desktop {
+        flex: 0 0 60%;
+        max-width: 60%;
+        height: calc(100vh - 90px);
+        position: relative;
       }
 
-      .cont__info {
-        padding-top: 151px;
+      @include desktop-1600 {
+        height: calc(100vh - 110px);
+      }
+
+      .content {
+        height: 340px;
 
         @include desktop {
-          padding-top: 190px;
-          padding-bottom: 30px;
+          position: fixed;
+          height: 100%;
+          width: 60%;
         }
 
-        @include desktop-1600 {
-          grid-template-columns: 33% auto;
-        }
+        .front-slide {
+          margin-bottom: 0;
 
-        @include desktop-1920 {
-          padding-top: 245px;
-        }
-
-        .cont__info__info {
-          max-width: 190px;
-
-          padding-bottom: 30px;
-
-          @include desktop {
-            max-width: 464px;
-
-            padding-bottom: 0;
-          }
-
-          .cont--info-inner {
-            opacity: 0;
-            transform: translateY(40px);
-            transition: ease-in 0.8s all;
-            transition-delay: 0.3s;
-          }
-
-          .cont__info__type_content {
-            @include Eina01-SemiBold;
-            font-size: 10px;
-            line-height: 1.5;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-
-            margin-bottom: 10px;
+          .slide-item {
+            height: 340px;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
 
             @include desktop {
-              font-size: 14px;
-              line-height: 1.07;
-              letter-spacing: 3px;
-
-              margin-bottom: 21px;
+              height: calc(100vh - 90px);
             }
-          }
 
-          h1.cont__info__the_title {
-            font-size: 25px;
-            line-height: 1.2;
-
-            margin-bottom: 15px;
-
-            @include desktop {
-              @include H1-Desktop;
-              margin-bottom: 29px;
+            @include desktop-1600 {
+              height: calc(100vh - 110px);
             }
-          }
 
-          p {
-            @include Eina01-Light;
-
-            margin-bottom: 20px;
-
-            @include desktop {
-              @include Body-Desktop;
-              
-              margin-bottom: 27px;
-            }
-          }
-
-          .cont--info-link {
-            opacity: 0;
-            transition: opacity 0.6s ease-in 1.8s;
-
-            overflow: hidden;
-
-            a.cont__info__enlace {
-              @include button;
-            }
-          }
-        }
-
-        .cont__info__img {
-          display: flex;
-          justify-content: center;
-
-          //padding-bottom: 25px;
-          padding-bottom: 0;
-
-          position: absolute;
-          top: 0;
-          right: 0;
-
-          max-width: calc(100vw - 190px - 40px);
-
-          @include tablet {
-            max-width: calc(100vw - 190px - 100px);
-          }
-
-          @include desktop {
-            max-width: calc(100vw - 464px - 100px);
-          }
-
-          @include desktop-1366 {
-            max-width: calc(100vw - 464px - 200px);
-          }
-
-          @include desktop-1920 {
-            max-width: calc(100vw - 464px - 280px);
-          }
-
-          img {
-            max-height: 100vh;
-            min-height: 100vh;
-
-            object-fit: cover;
-            object-position: left;
-
-            &.img-desktop {
-              //display: none;
-
-              @include desktop {
-                //display: block;
+            &.slick-active {
+              .slide-content {
+                transform: translateY(0);
+                opacity: 1;
               }
             }
 
-            &.img-mobile {
-              @include desktop {
-                display: none;
+            .slide-content {
+              transform: translateY(20px);
+              opacity: 0;
+
+              padding: 31px 60px 0 20px;
+
+              @include transition(1s);
+              transition-delay: 0.5s;
+
+              @include tablet {
+                padding: 31px 60px 0 50px;
               }
+
+              @include desktop {
+                padding-left: 100px;
+                padding-top: 80px;
+
+                max-width: calc(440px + 100px);
+              }
+
+              h2 {
+                font-size: 1.875rem;
+                line-height: 1.17;
+
+                margin-top: 0;
+                margin-bottom: 9px;
+
+                @include desktop {
+                  font-size: 4.063rem;
+                  line-height: 1.08;
+
+                  margin-bottom: 17px;
+                }
+              }
+
+              h3 {
+                font-size: 1.25rem;
+                line-height: 1.25;
+                font-weight: normal;
+
+                margin-top: 0;
+                margin-bottom: 18px;
+
+                @include desktop {
+                  font-size: 2.188rem;
+                  line-height: 1.14;
+
+                  margin-bottom: 36px;
+                }
+              }
+
+              a {
+                padding: 13px 33px;
+                font-size: 0.75rem;
+                line-height: 1.67;
+                letter-spacing: 1.2px;
+                font-weight: bold;
+                color: $white;
+                text-decoration: none;
+                text-transform: uppercase;
+                background-color: $baby-shit-brown;
+                @include transition;
+
+                @include desktop {
+                  padding: 13px 56px;
+                }
+
+                &:visited {
+                  color: $white
+                }
+
+                &:hover {
+                  background-color: $baby-shit-brown;
+                }
+              }
+            }
+          }
+
+          .slick-dots {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            text-align: left;
+            width: 90vw;
+
+            @include tablet {
+              left: 50px;
+            }
+
+            @include desktop {
+              bottom: 77px;
+              left: 100px;
             }
           }
         }
       }
     }
-  }
-}
 
-.cont--promoted-page {
-  padding-top: 32px;
+    .right {
+      width: 100%;
 
-  @include tablet {
-    padding-top: 50px;
-  }
+      @include desktop {
+        flex: 0 0 40%;
+        max-width: 40%;
+      }
 
-  @include desktop-1366 {
-    padding-top: 99px;
-  }
-
-  .cont--inner {
-    .cont--row {
-      @include flexbox_wrap;
-
-      &.items-2 {}
-
-      &.items-3 {}
-
-      .cont--item {
-        position: relative;
-        padding-bottom: 11px;
+      .products {
+        padding: 50px 20px 0;
 
         @include tablet {
-          padding-bottom: 29px;
+          padding: 50px 50px 0;
         }
 
-        @include desktop-1366 {
-          padding-bottom: 66px;
-        }
-
-        &.w50 {
-          width: 100%;
-
-          @include tablet {
-            width: 50%;
-            padding-right: 14px;
-          }
-
-          @include desktop-1366 {
-            padding-right: 33px;
-          }
-
-          &:last-child {
-            @include tablet {
-              padding-left: 14px;
-              padding-right: 0;
-            }
-
-            @include desktop-1366 {
-              padding-left: 33px;
-            }
-          }
-        }
-
-        &.w25 {
-          width: 50%;
-          padding-right: 5px;
-
-          @include tablet {
-            width: 25%;
-            padding-left: 14px;
-          }
-
-          @include desktop-1366 {
-            padding-left: 33px;
-            padding-right: 17px;
-          }
-
-          &:last-child {
-            padding-left: 5px;
-            padding-right: 0;
-
-            @include tablet {
-              padding-left: 20px;
-            }
-
-            @include desktop-1366 {
-              padding-left: 49px;
-            }
-          }
+        @include desktop {
+          padding: 81px 50px 0;
         }
 
         a {
-          display: block;
-          position: relative;
-          border: 1px solid transparent;
+          text-decoration: none;
+        }
+
+        .title {
+          @include H1-Mobile;
+          font-weight: bold;
+
+          margin-top: 0;
+          margin-bottom: 3px;
+
+          @include desktop {
+            
+            font-weight: bold;
+          }
+        }
+
+        .viewall {
+
+          margin-top: 0;
+          margin-bottom: 18px;
+          text-transform: uppercase;
+          cursor: pointer;
+
+          @include desktop {
+            margin-bottom: 60px;
+          }
+
+          a {
+            text-decoration: none;
+            color: $baby-shit-brown;
+            font-size: 0.75rem;
+            letter-spacing: 1.2px;
+
+            &:hover {
+              color: $baby-shit-brown;
+            }
+          }
+        }
+
+        .slick-products {
+          margin-right: -5px;
 
           @include tablet {
-            height: 100%;
+            margin-right: 0;
           }
 
-          &:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0.53;
-            background-blend-mode: multiply;
-            background-image: linear-gradient(to bottom, $black, rgba(0, 0, 0, 0.35));
-            z-index: 1;
-            @include transition;
-          }
+          .slick-slide {
+            height: 100% !important;
+            margin: 0 15px;
 
-          &.inactive {
-            border: 1px solid $black;
-
-            &:before,
-            img {
-              opacity: 0;
+            @include desktop-1600 {
+              margin: 0 33px;
             }
+          }
 
-            .cont--info {
+          .slick-list {
+            margin: 0 -15px;
 
-              h2,
-              span {
-                color: $black;
+            @include desktop-1600 {
+              margin: 0 -33px;
+            }
+          }
+        }
+
+        .item {
+          a {
+            @include flexbox;
+            flex-direction: column;
+
+            &:hover {
+              img {
+                transform: translateX(-50%) translateY(-50%) scale(1.1);
+              }
+
+              .name {
+                color: $baby-shit-brown;
               }
             }
           }
 
-          img {
-            display: block;
+          .img {
+            position: relative; 
+            //overflow: hidden;
             width: 100%;
-            height: 100%;
-            object-fit: cover;
-            @include transition;
+            padding-top: 100%;
+
+            img {
+              @include transition;
+              @include absolute_center_xy;
+            }
           }
 
-          .cont--info {
-            position: absolute;
-            top: 15px;
-            left: 15px;
-            width: calc(100% - 30px);
-            max-width: 200px;
-            z-index: 1;
+          .name {
+            @include H1-Mobile;
+            font-size: 0.938rem;
+
+            margin-top: 10px;
+            max-width: 130px;
+
+            @include transition;
+          }
+        }
+
+        .slick-dots {
+          position: relative !important;
+          text-align: left !important;
+
+          @include desktop {
+            bottom: -2px;
+          }
+        }
+
+      }
+
+      .divider {
+        height: 1px;
+        width: 100%;
+        margin-top: 37px;
+        margin-bottom: 0;
+        background-color: rgba(brown, .1);
+
+        @include tablet {
+          margin-top: 60px;
+        }
+
+        @include desktop {
+          //display: none;
+        }
+      }
+
+      .novedades {
+        padding: 60px 20px;
+
+        @include tablet {
+          padding: 60px 50px;
+        }
+
+        @include desktop {
+          padding: 60px 165px 60px 50px;
+        }
+
+        .new {
+
+          //padding: 60px 50px;
+          .type {
+            color: $baby-shit-brown;
+          } 
+
+          .title {
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 18px;
+            padding-right: 60px;
+            position: relative;
+
+            @include desktop {
+              padding-right: unset;
+            }
+
+            a {
+              text-decoration: none;
+              color: $baby-shit-brown;
+
+              &:hover {
+                color: $baby-shit-brown;
+              }
+            }
+
+            .link {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              right: 10px;
+
+              @include desktop {
+                right: -70px;
+              }
+            }
+          }
+ 
+          p {
+            color: brown;
+          }
+        }
+      }
+
+      .tiles-box {
+        display: flex;
+        flex-direction: column;
+
+        .tiles {
+          width: 100%;
+          display: flex;
+
+          &:first-child {
+            margin-bottom: 4px;
+          }
+
+          .tile {
+            display: flex;
+            flex-direction: column;
+
+            position: relative;
+            width: 50%;
+            text-decoration: none;
+
+            min-height: 190px;
+            padding: 50px 20px 40px;
+            @include Body-Mobile;
+            background-color: $white-two;
 
             @include tablet {
-              top: 20px;
-              left: 20px;
-              width: calc(100% - 40px);
+              padding: 50px 50px 40px;
             }
 
-            @include desktop-1366 {
-              top: 60px;
-              left: 61px;
-              width: calc(100% - 120px);
-              max-width: 502px;
+            @include desktop {
+              min-height: 425px;
+              padding: 80px 50px 105px;
             }
 
-            h2 {
-              @include Eina01-Regular;
-              color: $white;
-              @include transition;
-              margin-bottom: 6px;
+            &:hover {
+              background-color: #e6eded;
+            }
 
-              @include desktop-1366 {
-                font-size: 40px;
-                line-height: 1;
-                margin-bottom: 10px;
+            &:first-child {
+              margin-right: 4px;
+            }
+
+            .title {
+              position: relative;
+
+              font-size: 1.25rem;
+              font-weight: bold;
+              line-height: 1.25;
+              word-break: break-all;
+
+              margin: 0;
+              color: $baby-shit-brown;
+
+              @include desktop {
+                font-size: 1.875rem;
+                line-height: 0.83;
+
+                margin-bottom: 9px;
+              }
+
+              &:before {
+                @include desktop {
+                  top: -23px;
+                }
               }
             }
 
-            span {
-              display: block;
-              @include Eina01-Regular;
-              font-size: 13px;
-              line-height: 1.38;
-              color: $white;
-              @include transition;
+            p {
+              display: none;
 
-              @include desktop-1366 {
-                font-size: 20px;
-                line-height: 1.5;
+              @include desktop {
+                display: block;
+              }
+            }
+
+            .img {
+              display: flex;
+              align-items: flex-end;
+              flex-grow: 1;
+
+              img {
+                max-width: 50px;
+
+                @include desktop {
+                  max-width: 70px;
+                }
               }
             }
           }
