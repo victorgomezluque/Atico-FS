@@ -18,6 +18,12 @@ $args = array(
 );
 $cats = get_terms($args);
 
+$args_sponsors = array(
+    'post_type' => 'sponsor',
+);
+$sponsors = get_posts($args_sponsors);
+
+
 
 ?>
 <div class="page-wrapper wrapper-main" id="home">
@@ -59,6 +65,25 @@ $cats = get_terms($args);
                         </div>
                     </div>
 
+                </div>
+                <div class="divider"></div>
+                <div class="slick-products">
+                    <?php
+                    foreach ($sponsors as $sponsor) {
+                        $nombre_sponsor = get_field("nombre_sponsor", $sponsor->ID);
+                        $imagen_sponsor = get_field("imagen_sponsor", $sponsor->ID);
+                        $url_sponsor = get_field("url_sponsor", $sponsor->ID);
+                    ?>
+                        <div class="item-sponsors">
+                            <a href="<?php echo $url_sponsor; ?>">
+                                <img src="<?php echo $imagen_sponsor; ?>" alt="Nombre Sponsor">
+                                <p><?php echo $nombre_sponsor; ?></p>
+                            </a>
+                        </div>
+
+                    <?php
+                    }
+                    ?>
                 </div>
                 <div class="divider"></div>
             </div>
