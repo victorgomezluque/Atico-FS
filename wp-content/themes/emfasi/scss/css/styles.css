@@ -1643,6 +1643,7 @@ body.menu-open {
                 #home .site-main .left .content .front-slide .slide-item .slide-content a:hover {
                   background-color: #97930d; }
           #home .site-main .left .content .front-slide .slick-dots {
+            display: none !important;
             position: absolute;
             bottom: 20px;
             left: 20px;
@@ -1653,6 +1654,7 @@ body.menu-open {
                 left: 50px; } }
             @media only screen and (min-width: 1024px) {
               #home .site-main .left .content .front-slide .slick-dots {
+                display: none !important;
                 bottom: 77px;
                 left: 100px; } }
     #home .site-main .right {
@@ -1680,7 +1682,7 @@ body.menu-open {
           color: #000000;
           font-weight: bold;
           margin-top: 0;
-          margin-bottom: 3px; }
+          margin-bottom: 20px; }
           @media only screen and (min-width: 1024px) {
             #home .site-main .right .products .title {
               font-weight: bold; } }
@@ -1704,6 +1706,8 @@ body.menu-open {
           @media only screen and (min-width: 768px) {
             #home .site-main .right .products .slick-products {
               margin-right: 0; } }
+          #home .site-main .right .products .slick-products .item-products-content {
+            text-align: center; }
           #home .site-main .right .products .slick-products .slick-slide {
             height: 100% !important;
             margin: 0 15px; }
@@ -1751,6 +1755,7 @@ body.menu-open {
           -moz-transition: all 0.3s;
           transition: all 0.3s; }
         #home .site-main .right .products .slick-dots {
+          display: none !important;
           position: relative !important;
           text-align: left !important; }
           @media only screen and (min-width: 1024px) {
@@ -1764,7 +1769,8 @@ body.menu-open {
         background-color: rgba(165, 42, 42, 0.1); }
         @media only screen and (min-width: 768px) {
           #home .site-main .right .divider {
-            margin-top: 60px; } }
+            margin-top: 30px;
+            margin-bottom: 30px; } }
       #home .site-main .right .novedades {
         padding: 60px 20px; }
         @media only screen and (min-width: 768px) {
@@ -1830,7 +1836,7 @@ body.menu-open {
                 min-height: 425px;
                 padding: 80px 50px 105px; } }
             #home .site-main .right .tiles-box .tiles .tile:hover {
-              background-color: #e6eded; }
+              background-color: rgba(238, 255, 0, 0.5); }
             #home .site-main .right .tiles-box .tiles .tile:first-child {
               margin-right: 4px; }
             #home .site-main .right .tiles-box .tiles .tile .title {
@@ -1840,7 +1846,7 @@ body.menu-open {
               line-height: 1.25;
               word-break: break-all;
               margin: 0;
-              color: #97930d; }
+              color: black; }
               @media only screen and (min-width: 1024px) {
                 #home .site-main .right .tiles-box .tiles .tile .title {
                   font-size: 1.875rem;

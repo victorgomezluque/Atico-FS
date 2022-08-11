@@ -39,11 +39,22 @@
             ]
         });
 
-        $('.woocommerce.columns-4').slick({
+        $('.front-slide').slick({
             infinite: false,
-            slidesToShow: 4,
-            slidesToScroll: 2,
-            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 5000,
+        });
+        
+
+        $('.slick-products-sponsors').slick({
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: false,
             arrows: false,
             autoplay: true,
             autoplaySpeed: 5000,

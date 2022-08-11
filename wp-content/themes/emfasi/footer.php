@@ -16,18 +16,7 @@
 
 			<div class="row">
 
-				<footer id="colophon" class="site-footer">
 				
-					<div class="footer--column footer--column__left">
-						<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-column-left')) : endif; ?>
-					</div>
-					<div class="footer--column footer--column__right">
-						<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-column-right')) : endif; ?>
-					</div>
-
-
-
-				</footer><!-- #colophon -->
 				
 			</div><!-- row end -->
 
