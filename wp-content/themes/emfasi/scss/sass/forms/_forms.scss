@@ -2,7 +2,7 @@
     max-width: inherit;
 
     form {
-        >p {
+        > p {
             position: relative;
             margin-bottom: 20px;
         }
@@ -84,7 +84,7 @@
             position: relative;
             display: inline-block !important;
             -webkit-appearance: none;
-            background: #FFFFFF;
+            background: #ffffff;
             border: 1px solid rgba($black, 0.4);
             width: 18px;
             height: 18px;
@@ -107,7 +107,7 @@
             }
 
             &:after {
-                @include emfasi('');
+                @include emfasi("");
                 width: 11px;
                 height: 11px;
                 @include center-element;
@@ -164,7 +164,7 @@
                 position: inherit;
                 @include flexbox;
                 align-items: center;
-                font-family: 'Eina01-Light', sans-serif !important;
+                font-family: "Eina01-Light", sans-serif !important;
                 font-weight: 500 !important;
                 font-size: 13px;
                 line-height: 1.38;
@@ -192,7 +192,6 @@
             }
         }
 
-
         .wpcf7-response-output {
             @include Eina01-Bold;
             font-size: 12px;
@@ -212,7 +211,6 @@
         &.sent {
             .wpcf7-response-output {
                 color: $black;
-
             }
         }
 
@@ -235,11 +233,10 @@
 }
 
 form {
-
     &.wpcf7-form {
-        >p {
-            >small {
-                >a {
+        > p {
+            > small {
+                > a {
                     display: inline-block;
                     @include Eina01-Light;
                     @include link_underline;
@@ -287,6 +284,26 @@ form {
 
             @include desktop-1920 {
                 margin-top: 55px;
+            }
+        }
+    }
+}
+
+.left {
+    .wpcf7 {
+        max-width: 100%;
+        form {
+            .div-form {
+                @include desktop {
+                    display: grid;
+                    grid-template-columns: 45% 45%;
+                }
+                label {
+                    margin-bottom: 20px;
+                    &.espacio {
+                        margin-right: 5%;
+                    }
+                }
             }
         }
     }

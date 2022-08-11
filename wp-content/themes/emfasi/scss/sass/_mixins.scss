@@ -2,7 +2,7 @@
 @import "mixins/mixins_fonts";
 
 @mixin img-opacity {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -48,9 +48,8 @@
 
 @mixin grayscale_element($value) {
     -webkit-filter: #{"grayscale(#{$value})"};
--moz-filter: #{"grayscale(#{$value})"};
-filter:#{"grayscale(#{$value})"};
-
+    -moz-filter: #{"grayscale(#{$value})"};
+    filter: #{"grayscale(#{$value})"};
 }
 
 @mixin flexbox {
@@ -112,8 +111,7 @@ filter:#{"grayscale(#{$value})"};
     }
 }
 
-@mixin aspect-ratio($width,
-    $height) {
+@mixin aspect-ratio($width, $height) {
     position: relative;
 
     &:before {
@@ -123,7 +121,7 @@ filter:#{"grayscale(#{$value})"};
         padding-top: ($height / $width) * 100%;
     }
 
-    >.wpb_wrapper {
+    > .wpb_wrapper {
         position: absolute;
         top: 0;
         left: 0;
@@ -141,7 +139,7 @@ filter:#{"grayscale(#{$value})"};
     }
 
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         top: -17px;
         left: 0;
@@ -156,7 +154,6 @@ filter:#{"grayscale(#{$value})"};
         }
     }
 }
-
 
 /* BUTTON */
 
@@ -176,7 +173,7 @@ filter:#{"grayscale(#{$value})"};
 
     box-shadow: none;
     //background-image: linear-gradient(to right, $light-blue 5%, #8f41f1 97%);
-    background-image: linear-gradient(to right, $light-blue, #8f41f1, $light-blue, #8f41f1);
+    background-image: linear-gradient(to right, rgb(5, 4, 4), rgb(255, 255, 5), rgb(255, 255, 5), rgb(0, 0, 0));
     background-size: 300% 100%;
     color: $white;
 
@@ -237,7 +234,7 @@ filter:#{"grayscale(#{$value})"};
     position: relative;
 
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         bottom: -4px;
         right: 0;
@@ -258,6 +255,6 @@ filter:#{"grayscale(#{$value})"};
 
 @mixin padding-left-container {
     @include desktop-1920 {
-        padding-left: calc((100vw - 1640px)/2);
+        padding-left: calc((100vw - 1640px) / 2);
     }
 }
