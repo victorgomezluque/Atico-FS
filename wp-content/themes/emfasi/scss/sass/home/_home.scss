@@ -1,4 +1,5 @@
-#home, #contact {
+#home,
+#contact {
   //TODO: afegir-ho a totes les pagines
   min-height: 100vh;
   position: relative;
@@ -135,10 +136,13 @@
                 }
               }
             }
+            .item-product-features {
+              overflow: auto;
+            }
           }
 
           .slick-dots {
-            display:none !important; 
+            display: none !important;
             position: absolute;
             bottom: 20px;
             left: 20px;
@@ -150,7 +154,7 @@
             }
 
             @include desktop {
-              display:none !important; 
+              display: none !important;
               bottom: 77px;
               left: 100px;
             }
@@ -216,6 +220,12 @@
           }
         }
 
+        .item-sponsor {
+          border-right: solid 1px grey;
+          .item-image-sponsor {
+            width: max-content;
+          }
+        }
         .slick-products {
           margin-right: -5px;
 
@@ -232,6 +242,15 @@
 
             @include desktop-1600 {
               margin: 0 33px;
+            }
+            &.item-sponsors {
+              border-right: solid 1px grey;
+              height: 100px !important;
+              margin: 0px;
+              padding: 16px;
+              .item-href-sponsor {
+                width: max-content;
+              }
             }
           }
 

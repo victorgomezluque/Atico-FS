@@ -308,3 +308,12 @@ form {
         }
     }
 }
+
+#contact {
+    .site-main {
+        flex-direction: column-reverse;
+        @include tablet {
+            flex-direction: column;
+        }
+    }
+}

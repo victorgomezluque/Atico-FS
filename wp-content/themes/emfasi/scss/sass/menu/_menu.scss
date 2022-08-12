@@ -120,7 +120,7 @@ body {
   }
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
 
     width: 100%;
@@ -129,7 +129,7 @@ body {
     top: 0;
     left: 0;
 
-    background-image: linear-gradient(to right, $light-blue 5%, #8f41f1 97%);
+    background-image: linear-gradient(to right, $light-blue 5%, black 97%);
     opacity: 0;
     @include transition;
   }
@@ -190,14 +190,13 @@ body {
               width: 100%;
             }
           }
-
         }
 
         span {
           position: relative;
 
           &::before {
-            content: '';
+            content: "";
             position: absolute;
             bottom: -4px;
             right: 0;
@@ -271,7 +270,8 @@ body {
           }
         }
 
-        @include desktop-1280 {}
+        @include desktop-1280 {
+        }
 
         @include desktop-1366 {
           padding-bottom: 29px;
@@ -328,7 +328,6 @@ body {
     }
 
     .menu-bottom-info--top {
-
       @include tablet {
         @include flexbox;
         justify-content: space-between;
@@ -413,7 +412,7 @@ body {
       .cont--logos {
         @include flexbox;
         align-items: center;
-        
+
         column-gap: 20px;
         padding-top: 28px;
 
@@ -441,12 +440,13 @@ body {
         }
 
         .kitdigital-partner-menu {
-          @include tablet {}
+          @include tablet {
+          }
         }
 
         .google-partner-menu {
-
-          @include tablet {}
+          @include tablet {
+          }
         }
       }
     }
@@ -553,7 +553,7 @@ body {
                 position: relative;
 
                 &::before {
-                  content: '';
+                  content: "";
                   position: absolute;
                   bottom: -4px;
                   right: 0;
@@ -639,7 +639,7 @@ body {
   }
 
   &.active,
-  .menu-icon__cheeckbox:checked+div {
+  .menu-icon__cheeckbox:checked + div {
     span {
       &:first-of-type {
         transform: rotate(45deg) scale(1.5);
@@ -663,8 +663,8 @@ body {
 
   &.active:hover span:first-of-type,
   &.active:hover span:last-of-type,
-  &:hover .menu-icon__cheeckbox:checked+div span:first-of-type,
-  &:hover .menu-icon__cheeckbox:checked+div span:last-of-type {
+  &:hover .menu-icon__cheeckbox:checked + div span:first-of-type,
+  &:hover .menu-icon__cheeckbox:checked + div span:last-of-type {
     right: 19px;
 
     @include desktop {
@@ -674,7 +674,6 @@ body {
   }
 
   &:hover {
-
     // no need hover effect on mobile.
     @media (min-width: 1024px) {
       span:first-of-type {

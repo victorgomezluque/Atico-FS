@@ -71,7 +71,7 @@ $sponsors = get_posts($args_sponsors);
 
                         ?>
                             <div class="item">
-                                <img src="<?php echo $image[0]; ?>" data-id="">
+                                <img class="item-product-features" src="<?php echo $image[0]; ?>" data-id="">
                                 <p><?php echo $product->get_name(); ?></p>
                             </div>
                         <?php
@@ -125,9 +125,8 @@ $sponsors = get_posts($args_sponsors);
                             $url_sponsor = get_field("url_sponsor", $sponsor->ID);
                         ?>
                             <div class="item-sponsors">
-                                <a href="<?php echo $url_sponsor; ?>">
-                                    <img src="<?php echo $imagen_sponsor; ?>" alt="Nombre Sponsor">
-                                    <p><?php echo $nombre_sponsor; ?></p>
+                                <a class="item-href-sponsor" href="<?php echo $url_sponsor; ?>">
+                                    <img class="item-image-sponsor" src="<?php echo $imagen_sponsor; ?>" alt="Nombre Sponsor">
                                 </a>
                             </div>
 
