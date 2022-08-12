@@ -44,22 +44,6 @@ $sponsors = get_posts($args_sponsors);
         </div>
         <div class="right">
             <div class="products">
-                <!-- <div class="products-categories">
-                    <h3 class="title bar"><?php _e('Productos', 'venfilter'); ?></h3>
-                    <p class="viewall"><a href="<?= get_permalink(get_page_by_title('productos')) ?>"><?php _e('Ver todos', 'venfilter'); ?></a></p>
-                    <div class="slick-products">
-                        <?php if ($cats) : foreach ($cats as $cat) : ?>
-                                <?php $id = get_term_meta($cat->term_id, 'thumbnail_id', true); ?>
-                                <div class="item">
-                                    <a href="<?= get_term_link($cat->term_id, 'product_cat') ?>">
-                                        <div class="img"><img src="<?php echo esc_url(wp_get_attachment_url($id)); ?>" alt=""></div>
-                                        <div class="name"><?= $cat->name ?></div>
-                                    </a>
-                                </div>
-                        <?php endforeach;
-                        endif; ?>
-                    </div>
-                </div> -->
                 <div class="divider"></div>
                 <div class="features-products">
                     <h3 class="title bar"><?php _e('Productos Destacados', 'venfilter'); ?></h3>
@@ -72,16 +56,20 @@ $sponsors = get_posts($args_sponsors);
                         ?>
                             <div class="item">
                                 <img class="item-product-features" src="<?php echo $image[0]; ?>" data-id="">
-                                <p><?php echo $product->get_name(); ?></p>
                             </div>
                         <?php
                         }
                         ?>
                     </div>
+                    <div class="features-products-more">
+                        <a href="/tienda">
+                            <?php _e('Ver todos', 'atico'); ?>
+                        </a>
+                    </div>
                 </div>
                 <div class="divider"></div>
                 <div class="tiles-box">
-                <div class="tiles">
+                    <div class="tiles">
                         <a class="tile" href="/#">
                             <h3 class="title bar">Partidos</h3>
                             <p>Descubre los partidos del Atico FS</p>
@@ -117,7 +105,7 @@ $sponsors = get_posts($args_sponsors);
                 <div class="divider"></div>
                 <div class="sponsors">
                     <h3 class="title bar"><?php _e('Sponsors', 'venfilter'); ?></h3>
-                    <div class="slick-products">
+                    <div class="slick-sponsors">
                         <?php
                         foreach ($sponsors as $sponsor) {
                             $nombre_sponsor = get_field("nombre_sponsor", $sponsor->ID);

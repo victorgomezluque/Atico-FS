@@ -219,46 +219,55 @@
             }
           }
         }
+        .features-products {
+          .slick-products {
+            margin-right: -5px;
 
-        .item-sponsor {
-          border-right: solid 1px grey;
-          .item-image-sponsor {
-            width: max-content;
-          }
-        }
-        .slick-products {
-          margin-right: -5px;
-
-          @include tablet {
-            margin-right: 0;
-          }
-
-          .item-products-content {
-            text-align: center;
-          }
-          .slick-slide {
-            height: 100% !important;
-            margin: 0 15px;
-
-            @include desktop-1600 {
-              margin: 0 33px;
+            @include tablet {
+              margin-right: 0;
             }
-            &.item-sponsors {
-              border-right: solid 1px grey;
-              height: 100px !important;
-              margin: 0px;
-              padding: 16px;
-              .item-href-sponsor {
-                width: max-content;
+
+            .item-products-content {
+              text-align: center;
+            }
+            .slick-slide {
+              height: 100% !important;
+              margin: 0 15px;
+
+              @include desktop-1600 {
+                margin: 0 33px;
+              }
+              img {
+                @include tablet {
+                  width: auto !important;
+                  height: 140px !important;
+                }
+              }
+            }
+
+            .slick-list {
+              margin: 0 -15px;
+
+              @include desktop-1600 {
+                margin: 0 -33px;
               }
             }
           }
-
-          .slick-list {
-            margin: 0 -15px;
-
-            @include desktop-1600 {
-              margin: 0 -33px;
+          .features-products-more {
+            text-align: center;
+            a {
+              color: black;
+            }
+          }
+        }
+        .slick-sponsors {
+          &.item-sponsors {
+            border-right: solid 1px grey;
+            height: 100px !important;
+            margin: 0px;
+            padding: 16px;
+            .item-href-sponsor {
+              width: max-content;
             }
           }
         }

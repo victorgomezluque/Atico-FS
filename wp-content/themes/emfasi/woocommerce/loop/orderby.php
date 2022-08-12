@@ -40,7 +40,7 @@ $cats = get_terms($args);
 			<?php endforeach;
 			?>
 			<div class="item">
-				<a href="<?= get_permalink(get_page_by_title('productos')) ?>">
+				<a href="/tienda">
 					<div class="name"><?php _e('Ver todos', 'atico'); ?></div>
 				</a>
 			</div>

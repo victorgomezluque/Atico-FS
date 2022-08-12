@@ -1,81 +1,98 @@
-.woocommerce-shop {
-    .woocommerce {
-        &.columns-3 {
+.woocommerce {
+    &.columns-3 {
+        @include tablet {
             display: grid;
             grid-template-columns: 0% 20% 80%;
         }
+    }
 
-        .slick-products-shop {
-            @include tablet {
-                display: grid;
-                grid-template-columns: 50% 50%;
-                .item {
-                    margin-bottom: 15px;
-                    a {
-                        .name {
-                            color: black;
-                            padding-right: 20px;
-                            border-bottom: 2px solid transparent;
+    .slick-products-shop {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        border-bottom: solid 1px grey;
+        .item {
+            margin-bottom: 15px;
+            a {
+                .name {
+                    color: black;
+                    padding-right: 20px;
+                    border-bottom: 2px solid transparent;
 
-                            &:hover {
-                                width: fit-content;
-                                border-bottom: 2px solid transparent;
-                                border-image: linear-gradient(
-                                    0.25turn,
-                                    rgb(0, 0, 0),
-                                    rgb(255, 249, 34),
-                                    rgb(255, 249, 34),
-                                    rgb(0, 0, 0)
-                                );
-                                border-image-slice: 1;
-                            }
+                    &:hover {
+                        width: fit-content;
+                        border-bottom: 2px solid transparent;
+                        border-image: linear-gradient(
+                            0.25turn,
+                            rgb(0, 0, 0),
+                            rgb(255, 249, 34),
+                            rgb(255, 249, 34),
+                            rgb(0, 0, 0)
+                        );
+                        border-image-slice: 1;
+                    }
+                }
+            }
+        }
+        @include tablet {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            border-bottom: solid 1px white;
+            .item {
+                margin-bottom: 15px;
+                a {
+                    .name {
+                        &:hover {
                         }
                     }
                 }
             }
         }
-        .products {
-            li {
-                padding: 30px;
-                .price {
-                    .woocommerce-Price-amount {
-                        color: black;
-                    }
-                }
-                .button {
-                    background: #000000;
-                    color: white;
-                    border: none;
-                    z-index: 1;
-                }
-                .button:after {
-                    position: absolute;
-                    content: "";
-                    width: 0;
-                    height: 100%;
-                    top: 0;
-                    right: 0;
-                    z-index: -1;
-                    background-color: rgb(255, 238, 0);
-                    border: none;
-                    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
-                        4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-                    transition: all 0.3s ease;
-                }
-                .button:hover {
+    }
+    .products {
+        margin-top: 20px;
+        @include tablet {
+            margin-top: 0px;
+        }
+        li {
+            padding: 30px;
+            .price {
+                .woocommerce-Price-amount {
                     color: black;
                 }
-                .button:hover:after {
-                    left: 0;
-                    width: 100%;
-                }
-                .button:active {
-                    top: 2px;
-                }
+            }
+            .button {
+                background: #000000;
+                color: white;
+                border: none;
+                z-index: 1;
+            }
+            .button:after {
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 100%;
+                top: 0;
+                right: 0;
+                z-index: -1;
+                background-color: rgb(255, 238, 0);
+                border: none;
+                box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+                    4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s ease;
+            }
+            .button:hover {
+                color: black;
+            }
+            .button:hover:after {
+                left: 0;
+                width: 100%;
+            }
+            .button:active {
+                top: 2px;
             }
         }
     }
-    .woocommerce-result-count {
-        display: none;
-    }
+}
+.woocommerce-result-count {
+    display: none;
 }

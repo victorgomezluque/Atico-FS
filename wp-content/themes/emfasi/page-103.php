@@ -20,7 +20,6 @@ get_header();
     <main id="primary" class="site-main">
         <div class="left">
             <?php echo do_shortcode('[contact-form-7 id="124" title="Formulario de inscripción"]'); ?>
-
         </div>
         <div class="right">
             <div class="front-slide-contact">
