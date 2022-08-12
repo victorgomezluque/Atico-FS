@@ -28,7 +28,7 @@ $args = array(
 $cats = get_terms($args);
 ?>
 <div class="products-categories">
-	<h3 class="title bar"><?php _e('Productos', 'venfilter'); ?></h3>
+	<h3 class="title bar"><?php _e('Categorias de productos', 'venfilter'); ?></h3>
 	<div class="slick-products-shop">
 		<?php if ($cats) : foreach ($cats as $cat) : ?>
 				<?php $id = get_term_meta($cat->term_id, 'thumbnail_id', true); ?>

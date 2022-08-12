@@ -32,7 +32,10 @@ body {
   }
 
   &:hover {
-    background-color: $light-blue;
+    background-color: yellow !important;
+    span {
+      background-color: black;
+    }
   }
 
   .icon-font-icn-menu {

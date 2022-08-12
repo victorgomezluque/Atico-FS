@@ -992,7 +992,9 @@ body.menu-open {
       width: 100px;
       height: 100px; } }
   .cont--menu__open:hover {
-    background-color: #293fff; }
+    background-color: yellow !important; }
+    .cont--menu__open:hover span {
+      background-color: black; }
   @media only screen and (min-width: 1024px) {
     .cont--menu__open .icon-font-icn-menu {
       display: none; } }
@@ -6190,12 +6192,41 @@ body.home .cont--more-info {
       margin-bottom: 15px; }
       .woocommerce-shop .woocommerce .slick-products-shop .item a .name {
         color: black;
-        padding-right: 20px; }
+        padding-right: 20px;
+        border-bottom: 2px solid transparent; }
         .woocommerce-shop .woocommerce .slick-products-shop .item a .name:hover {
           width: fit-content;
           border-bottom: 2px solid transparent;
           border-image: linear-gradient(0.25turn, black, #fff922, #fff922, black);
           border-image-slice: 1; } }
+.woocommerce-shop .woocommerce .products li {
+  padding: 30px; }
+  .woocommerce-shop .woocommerce .products li .price .woocommerce-Price-amount {
+    color: black; }
+  .woocommerce-shop .woocommerce .products li .button {
+    background: #000000;
+    color: white;
+    border: none;
+    z-index: 1; }
+  .woocommerce-shop .woocommerce .products li .button:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #ffee00;
+    border: none;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; }
+  .woocommerce-shop .woocommerce .products li .button:hover {
+    color: black; }
+  .woocommerce-shop .woocommerce .products li .button:hover:after {
+    left: 0;
+    width: 100%; }
+  .woocommerce-shop .woocommerce .products li .button:active {
+    top: 2px; }
 .woocommerce-shop .woocommerce-result-count {
   display: none; }
 
