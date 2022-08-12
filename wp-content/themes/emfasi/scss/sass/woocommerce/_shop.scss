@@ -1,0 +1,40 @@
+.woocommerce-shop {
+    .woocommerce {
+        &.columns-3 {
+            display: grid;
+            grid-template-columns: 0% 20% 80%;
+        }
+
+        .slick-products-shop {
+            @include tablet {
+                display: grid;
+                grid-template-columns: 50% 50%;
+                .item {
+                    margin-bottom: 15px;
+                    a {
+                        .name {
+                            color: black;
+                            padding-right: 20px;
+
+                            &:hover {
+                                width: fit-content;
+                                border-bottom: 2px solid transparent;
+                                border-image: linear-gradient(
+                                    0.25turn,
+                                    rgb(0, 0, 0),
+                                    rgb(255, 249, 34),
+                                    rgb(255, 249, 34),
+                                    rgb(0, 0, 0)
+                                );
+                                border-image-slice: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .woocommerce-result-count {
+        display: none;
+    }
+}

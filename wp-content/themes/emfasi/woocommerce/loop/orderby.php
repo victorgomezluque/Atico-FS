@@ -22,24 +22,28 @@ if (!defined('ABSPATH')) {
 $args = array(
 	'taxonomy' => 'product_cat',
 	'hide_empty' => false,
-	'exclude' => array(27),
+	'exclude' => array(16),
 	'parent' => 0
 );
 $cats = get_terms($args);
 ?>
 <div class="products-categories">
 	<h3 class="title bar"><?php _e('Productos', 'venfilter'); ?></h3>
-	<p class="viewall"><a href="<?= get_permalink(get_page_by_title('productos')) ?>"><?php _e('Ver todos', 'venfilter'); ?></a></p>
-	<div class="slick-products">
+	<div class="slick-products-shop">
 		<?php if ($cats) : foreach ($cats as $cat) : ?>
 				<?php $id = get_term_meta($cat->term_id, 'thumbnail_id', true); ?>
 				<div class="item">
 					<a href="<?= get_term_link($cat->term_id, 'product_cat') ?>">
-						<div class="img"><img src="<?php echo esc_url(wp_get_attachment_url($id)); ?>" alt=""></div>
 						<div class="name"><?= $cat->name ?></div>
 					</a>
 				</div>
-		<?php endforeach;
-		endif; ?>
+			<?php endforeach;
+			?>
+			<div class="item">
+				<a href="<?= get_permalink(get_page_by_title('productos')) ?>">
+					<div class="name"><?php _e('Ver todos', 'atico'); ?></div>
+				</a>
+			</div>
+		<?php endif; ?>
 	</div>
 </div>

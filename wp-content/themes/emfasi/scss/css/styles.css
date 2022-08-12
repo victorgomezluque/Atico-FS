@@ -6179,4 +6179,24 @@ body.home .cont--more-info {
     font-weight: 600;
     font-style: normal; }
 
+.woocommerce-shop .woocommerce.columns-3 {
+  display: grid;
+  grid-template-columns: 0% 20% 80%; }
+@media only screen and (min-width: 768px) {
+  .woocommerce-shop .woocommerce .slick-products-shop {
+    display: grid;
+    grid-template-columns: 50% 50%; }
+    .woocommerce-shop .woocommerce .slick-products-shop .item {
+      margin-bottom: 15px; }
+      .woocommerce-shop .woocommerce .slick-products-shop .item a .name {
+        color: black;
+        padding-right: 20px; }
+        .woocommerce-shop .woocommerce .slick-products-shop .item a .name:hover {
+          width: fit-content;
+          border-bottom: 2px solid transparent;
+          border-image: linear-gradient(0.25turn, black, #fff922, #fff922, black);
+          border-image-slice: 1; } }
+.woocommerce-shop .woocommerce-result-count {
+  display: none; }
+
 /*# sourceMappingURL=styles.css.map */
