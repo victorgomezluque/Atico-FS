@@ -2,7 +2,7 @@
 Contributors: WebFactory
 Tags: maintenance, maintenance mode, maintenance page, coming soon, coming soon page, under construction, under construction page
 Requires at least: 4.0
-Tested up to: 5.9
+Tested up to: 6.0
 Stable tag: 4.06
 Requires PHP: 5.2
 License: GPLv2 or later

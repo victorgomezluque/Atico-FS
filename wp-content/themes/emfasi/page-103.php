@@ -31,10 +31,10 @@ get_header();
                 </div>
                 <div>
                     <img src="/wp-content/uploads/2022/08/IMG-20220519-WA0031.jpg" alt="">
-                </div>
-                <div>
+                </div> 
+               <!-- <div>
                     <img src="/wp-content/uploads/2022/08/IMG-20220519-WA0032.jpg" alt="">
-                </div>
+                </div> -->
             </div>
         </div>
 </div>

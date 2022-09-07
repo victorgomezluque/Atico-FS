@@ -1551,11 +1551,11 @@ body.menu-open {
   #home .site-main,
   #contact .site-main {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column-reverse; }
     @media only screen and (min-width: 1024px) {
       #home .site-main,
       #contact .site-main {
-        flex-direction: row; } }
+        flex-direction: inherit; } }
     #home .site-main .left,
     #contact .site-main .left {
       height: 340px; }
@@ -1977,6 +1977,9 @@ body.menu-open {
                   #home .site-main .right .tiles-box .tiles .tile .img img,
                   #contact .site-main .right .tiles-box .tiles .tile .img img {
                     max-width: 70px; } }
+
+#home .cont-logo {
+  display: none; }
 
 body .wt-cli-cookie-bar-container .wt-cli-cookie-bar {
   width: calc(100% - 20px) !important;
@@ -6247,6 +6250,12 @@ body.home .cont--more-info {
       top: 2px; }
 
 .woocommerce-result-count {
+  display: none; }
+
+.woocommerce-tabs.wc-tabs-wrapper {
+  display: none; }
+
+#comments {
   display: none; }
 
 /*# sourceMappingURL=styles.css.map */

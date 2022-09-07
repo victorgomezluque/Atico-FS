@@ -7,10 +7,9 @@
 
   .site-main {
     display: flex;
-    flex-direction: column;
-
+    flex-direction: column-reverse;	
     @include desktop {
-      flex-direction: row;
+		flex-direction: inherit;
     }
 
     .left {
@@ -486,5 +485,10 @@
         }
       }
     }
+  }
+}
+#home{
+  .cont-logo{
+    display: none;
   }
 }

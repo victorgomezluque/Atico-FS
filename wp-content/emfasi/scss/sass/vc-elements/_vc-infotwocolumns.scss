@@ -1,0 +1,309 @@
+.vc_infotwocolumns {
+    >.container {
+        @include tablet {
+            padding-left: 70px;
+            padding-right: 70px;
+        }
+        @include desktop-1280 {
+            @include flexbox;
+        }
+        @include desktop-1920 {
+            max-width: 1450px;
+            padding: 0;
+        }
+    }
+    .cont--left {
+        position: relative;
+        @include flexbox;
+        background-color: $black;
+        color: $white;
+        margin: 0 -20px;
+        padding: 41px 20px 8px;
+        @include tablet {
+            margin: 0 -70px;
+            padding: 50px 70px 17px;
+        }
+        @include desktop-1280 {
+            width: 50%;
+            margin: 0;
+            padding: 70px 70px 17px 0;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 99999px;
+                height: 100%;
+                top: 0;
+                left: -99999px;
+                background-color: $black;
+            }
+        }
+        @include desktop-1366 {
+            padding: 151px 0 17px;
+        }
+        .cont--inner {
+            .cont--title {
+                h2 {
+                    @include Eina01-Regular;
+                    font-size: 30px;
+                    line-height: 1.33;
+                    color: $white;
+                    margin-bottom: 5px;
+                    @include desktop-1366 {
+                        font-size: 70px;
+                        line-height: 1.14;
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+            .cont--subtitle {
+                max-width: 440px;
+                @include desktop-1366 {
+                    max-width: 500px;
+                }
+                h4 {
+                    @include Eina01-Light;
+                    font-size: 18px;
+                    line-height: 1.39;
+                    opacity: 0.4;
+                    @include desktop-1366 {
+                        font-size: 30px;
+                        line-height: 1.33;
+                    }
+                }
+            }
+            .cont--items {
+                padding-top: 6px;
+                @include tablet {
+                    @include flexbox_wrap;
+                    padding-top: 8px;
+                }
+                @include desktop-1366 {
+                    padding-top: 21px;
+                }
+                .vc_icotextbody_item {
+                    padding-bottom: 31px;
+                    @include tablet {
+                        width: 50%;
+                    }
+                    @include desktop-1280 {
+                        width: 100%;
+                        max-width: 500px;
+                        padding-bottom: 50px;
+                    }
+                    &:nth-child(odd) {
+                        @include tablet {
+                            padding-right: 34px;
+                        }
+                        @include desktop-1280 {
+                            padding-right: 0;
+                        }
+                    }
+                    &:nth-child(even) {
+                        @include tablet {
+                            padding-left: 34px;
+                        }
+                        @include desktop-1280 {
+                            padding-left: 0;
+                        }
+                    }
+                    .cont--image {
+                        img {
+                            max-width: 40px;
+                            @include desktop-1366 {
+                                max-width: 50px;
+                            }
+                        }
+                    }
+                    .cont--title {
+                        @include Eina01-Regular;
+                        font-size: 20px;
+                        line-height: 1.25;
+                        padding: 2px 0 7px;
+                        @include tablet {
+                            padding: 1px 0 7px;
+                        }
+                        @include desktop-1366 {
+                            font-size: 25px;
+                            line-height: 1.4;
+                            padding: 1px 0 2px;
+                        }
+                    }
+                    .cont--body {
+                        @include Eina01-Regular;
+                        font-size: 13px;
+                        line-height: 1.38;
+                        @include desktop-1366 {
+                            font-size: 15px;
+                            line-height: 1.33;
+                            opacity: 0.6;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .cont--right {
+        position: relative;
+        @include flexbox;
+        background-color: $white-two;
+        margin: 0 -20px;
+        padding: 40px 20px 19px;
+        @include tablet {
+            margin: 0 -70px;
+            padding: 50px 70px 31px;
+        }
+        @include desktop-1280 {
+            width: 50%;
+            padding: 70px 0 31px 70px;
+            margin: 0;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 99999px;
+                height: 100%;
+                top: 0;
+                right: -99999px;
+                background-color: $white-two;
+            }
+        }
+        @include desktop-1366 {
+            padding: 146px 0 124px;
+        }
+        .cont--inner {
+            width: 100%;
+            @include desktop-1366 {
+                max-width: 500px;
+                margin-left: auto;
+            }
+            ol.cont--items {
+                clear: both;
+                list-style: none;
+                margin: 0;
+                padding-left: 0;
+                li.vc_listoverlay_item {
+                    display: block;
+                    position: relative;
+                    counter-increment: inst;
+                    padding-top: 40px;
+                    padding-bottom: 20px;
+                    margin-bottom: 20px;
+                    border-bottom: 1px solid rgba($warm-grey, 0.4);
+                    @include tablet {
+                        padding: 0 0 19px 50px;
+                    }
+                    @include desktop-1366 {
+                        padding: 0 0 15px 80px;
+                        margin-bottom: 26px;
+                        border-bottom: none;
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                            width: calc(100% - 80px);
+                            height: 1px;
+                            background-color: rgba($warm-grey, 0.4);
+                        }
+                    }
+                    &:before {
+                        content: counter(inst);
+                        position: absolute;
+                        @include Eina01-Regular;
+                        font-size: 13px;
+                        line-height: 1;
+                        color: $black;
+                        border: 1px solid $black;
+                        text-align: center;
+                        top: 0;
+                        left: 0;
+                        height: 30px;
+                        width: 30px;
+                        @include flexbox;
+                        justify-content: center;
+                        align-items: center;
+                        @include tablet {
+                            top: 9px;
+                        }
+                        @include desktop-1366 {
+                            font-size: 21px;
+                            width: 50px;
+                            height: 50px;
+                            top: 24px;
+                        }
+                    }
+                    .cont--list-inner {
+                        @include flexbox;
+                        align-items: flex-end;
+                        justify-content: space-between;
+                        @include tablet {
+                            //align-items: center;
+                        }
+                        .cont--list-inner-left {
+                            padding-right: 10px;
+                            width: 90%;
+                            @include tablet {
+                                padding-right: 38px;
+                            }
+                            @include desktop-1366 {
+                                padding-right: 20px;
+                                padding-bottom: 5px;
+                                width: 80%;
+                            }
+                        }
+                    }
+                    .cont--title {
+                        @include H2-Mobile;
+                        padding-bottom: 6px;
+                        @include desktop-1366 {
+                            @include H2-Desktop;
+                            padding-bottom: 0px;
+                            margin-bottom: -4px;
+                        }
+                    }
+                    .cont--subtitle {
+                        @include Eina01-Regular;
+                        font-size: 13px;
+                        line-height: 1.38;
+                        @include desktop-1366 {
+                            @include Small-Desktop;
+                        }
+                    }
+                    .cont--moreinfo {
+                        @include flexbox;
+                        align-items: center;
+                        justify-content: center;
+                        width: 40px;
+                        height: 40px;
+                        @include desktop-1366 {
+                            width: 80px;
+                            height: 80px;
+                        }
+                        &:hover {
+                            cursor: pointer;
+                            i {
+                                &:before {
+                                    color: $baby-shit-brown;
+                                }
+                            }
+                        }
+                        i {
+                            margin: 0;
+                            @include desktop-1366 {
+                                width: 20px;
+                                height: 20px;
+                            }
+                            &:before {
+                                font-size: 10px;
+                                @include transition;
+                                @include desktop-1366 {
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                    .cont--body {}
+                }
+            }
+        }
+    }
+}

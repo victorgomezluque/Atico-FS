@@ -1,0 +1,94 @@
+.grid-index.collaborator-grid-index {
+    article {
+        a {
+            border: 1px solid $black;
+            &:hover {
+                .cont__info {
+                    opacity: 1;
+                }
+                .cont--img {
+                    opacity: 0;
+                }
+            }
+            .cont__info {
+                opacity: 0;
+                border: none;
+                padding: 29px 20px 2px;
+                @include tablet {
+                    @include flexbox;
+                    flex-direction: column;
+                }
+                @include desktop-1366 {
+                    padding: 40px 40px 30px;
+                }
+                .entry-header {
+                    h2.entry-title {
+                        color: $black !important;
+                    }
+                    .entry-classification {
+                        @include Eina01-Medium;
+                        font-size: 12px;
+                        line-height: 1.25;
+                        letter-spacing: 1.5px;
+                        text-transform: uppercase;
+                        color: $black;
+                        opacity: 0.4;
+                        margin-bottom: 10px;
+                        @include tablet {
+                            font-size: 14px;
+                            line-height: 1.07;
+                            letter-spacing: 1.78px;
+                            word-break: break-all;
+                        }
+                        @include desktop-1366 {
+                            margin-bottom: 18px;
+                        }
+                    }
+                }
+                .entry-content {
+                    color: $black !important;
+                    p {
+                        @include tablet {
+                            margin-bottom: 19px;
+                        }
+                        @include desktop-1366 {
+                            margin-bottom: 29px;
+                        }
+                    }
+                }
+                .cont--img-info {
+                    @include tablet {
+                        @include flexbox;
+                        align-items: flex-end;
+                        flex-grow: 1;
+                    }
+                    img {
+                        max-width: 77px;
+                        max-height: 80px;
+                        @include desktop-1366 {
+                            max-width: 100px;
+                            max-height: 104px;
+                        }
+                    }
+                }
+            }
+            .cont--img {
+                opacity: 1;
+                &:before {
+                    content: none;
+                }
+                img {
+                    object-fit: contain;
+                    padding: 0 44px;
+                    filter: grayscale(1);
+                    @include tablet {
+                        padding: 0 33px;
+                    }
+                    @include desktop-1366 {
+                        padding: 0 40px;
+                    }
+                }
+            }
+        }
+    }
+}

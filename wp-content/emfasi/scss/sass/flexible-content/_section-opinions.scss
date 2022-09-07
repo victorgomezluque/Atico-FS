@@ -1,0 +1,186 @@
+.section__opinions {
+    padding-bottom: 40px;
+
+    .container {
+        .cont__header {
+            border-top: 1px solid $black;
+
+            padding-top: 34px;
+
+            @include desktop-1366 {
+                max-width: 50%;
+
+                padding-top: 56px;
+            }
+
+            .cont__title {
+                @include Eina01-Bold;
+                font-size: 30px;
+                line-height: 1.17;
+                letter-spacing: normal;
+
+                margin-bottom: 12px;
+
+                @include desktop-1366 {
+                    font-size: 40px;
+                    line-height: 1.13;
+
+                    margin-bottom: 10px;
+                }
+            }
+
+            .cont__subtitle {
+                @include Eina01-Regular;
+                font-size: 20px;
+                line-height: 1.25;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                letter-spacing: normal;
+                color: $black;
+
+                margin-bottom: 22px;
+
+                @include desktop-1366 {
+                    font-size: 30px;
+                    line-height: 1.33;
+
+                    margin-bottom: 47px;
+                }
+            }
+        }
+
+        .cont__opinions {
+            .cont__opinion {
+                padding-bottom: 15px;
+
+                .cont__icon {
+                    width: 50px;
+                    height: 50px;
+
+                    border-radius: 50%;
+                    padding: 8px;
+
+                    background-color: $black;
+
+                    @include desktop-1366 {
+                        width: 70px;
+                        height: 70px;
+
+                        padding: 11px;
+                    }
+
+                    img {
+                        display: block;
+                    }
+                }
+
+                .cont__title {
+                    @include Eina01-Bold;
+                    font-size: 22px;
+                    line-height: 1.27;
+
+                    padding: 11px 0 8px;
+
+                    @include desktop-1366 {
+                        font-size: 30px;
+                        line-height: 1;
+
+                        padding: 20px 0 10px;
+                    }
+                }
+
+                .cont__teaser {
+                    p {
+                        font-size: 16px;
+                        line-height: 1.5;
+
+                        margin-bottom: 12px;
+
+                        @include desktop-1366 {
+                            font-size: 20px;
+                            line-height: 1.5;
+
+                            margin-bottom: 7px;
+                        }
+                    }
+                }
+
+                .cont__view-more {
+                    display: inline;
+
+                    @include Eina01-Bold;
+                    font-size: 15px;
+                    line-height: 1.33;
+
+                    cursor: pointer;
+
+                    color: $light-blue;
+                    @include link_underline;
+                }
+            }
+        }
+
+        .cont__opinions-items {
+            .cont__more-info-description {
+
+                strong {
+                    @include Eina01-Bold;
+                }
+                
+                p {
+                    margin-bottom: 28px;
+
+                    &.title-1 {
+                        @extend h1;
+
+                        margin-bottom: 9px;
+
+                        @include desktop-1366 {
+                            margin-bottom: 30px;
+                        }
+                    }
+
+                    &.title-2 {
+                        @include Eina01-Bold;
+                        font-size: 30px;
+                        line-height: 1.17;
+                        letter-spacing: normal;
+
+                        margin-bottom: 12px;
+
+                        @include desktop-1366 {
+                            font-size: 40px;
+                            line-height: 1.13;
+                        }
+                    }
+
+                    &.title-3 {
+                        @include Eina01-Bold;
+                        font-size: 22px;
+                        line-height: 1.27;
+
+                        margin-bottom: 12px;
+
+                        @include desktop-1366 {
+                            font-size: 30px;
+                            line-height: 1.33;
+
+                            margin-bottom: 6px;
+                        }
+                    }
+                }
+
+                ul {
+                    padding-inline-start: 26px;
+                    margin-top: 0;
+
+                    @include desktop-1366 {
+                        padding-inline-start: 31px;
+                    }
+                }
+            }
+        }
+    }
+
+}

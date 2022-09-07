@@ -1417,7 +1417,7 @@ var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external
 var external_wp_notices_namespaceObject = window["wp"]["notices"];
 ;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
 function extends_extends() {
-  extends_extends = Object.assign || function (target) {
+  extends_extends = Object.assign ? Object.assign.bind() : function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -1430,7 +1430,6 @@ function extends_extends() {
 
     return target;
   };
-
   return extends_extends.apply(this, arguments);
 }
 // EXTERNAL MODULE: ./node_modules/classnames/index.js
@@ -3822,32 +3821,32 @@ const store_store = (0,external_wp_data_namespaceObject.createReduxStore)(STORE_
 ;// CONCATENATED MODULE: ./node_modules/history/index.js
 
 
-/**
- * Actions represent the type of change to a location value.
- *
- * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#action
+/**
+ * Actions represent the type of change to a location value.
+ *
+ * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#action
  */
 var Action;
 
 (function (Action) {
-  /**
-   * A POP indicates a change to an arbitrary index in the history stack, such
-   * as a back or forward navigation. It does not describe the direction of the
-   * navigation, only that the current index changed.
-   *
-   * Note: This is the default action for newly created history objects.
+  /**
+   * A POP indicates a change to an arbitrary index in the history stack, such
+   * as a back or forward navigation. It does not describe the direction of the
+   * navigation, only that the current index changed.
+   *
+   * Note: This is the default action for newly created history objects.
    */
   Action["Pop"] = "POP";
-  /**
-   * A PUSH indicates a new entry being added to the history stack, such as when
-   * a link is clicked and a new page loads. When this happens, all subsequent
-   * entries in the stack are lost.
+  /**
+   * A PUSH indicates a new entry being added to the history stack, such as when
+   * a link is clicked and a new page loads. When this happens, all subsequent
+   * entries in the stack are lost.
    */
 
   Action["Push"] = "PUSH";
-  /**
-   * A REPLACE indicates the entry at the current index in the history stack
-   * being replaced by a new one.
+  /**
+   * A REPLACE indicates the entry at the current index in the history stack
+   * being replaced by a new one.
    */
 
   Action["Replace"] = "REPLACE";
@@ -3876,12 +3875,12 @@ function warning(cond, message) {
 var BeforeUnloadEventType = 'beforeunload';
 var HashChangeEventType = 'hashchange';
 var PopStateEventType = 'popstate';
-/**
- * Browser history stores the location in regular URLs. This is the standard for
- * most web apps, but it requires some configuration on the server to ensure you
- * serve the same app at multiple URLs.
- *
- * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#createbrowserhistory
+/**
+ * Browser history stores the location in regular URLs. This is the standard for
+ * most web apps, but it requires some configuration on the server to ensure you
+ * serve the same app at multiple URLs.
+ *
+ * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#createbrowserhistory
  */
 
 function createBrowserHistory(options) {
@@ -4106,13 +4105,13 @@ function createBrowserHistory(options) {
   };
   return history;
 }
-/**
- * Hash history stores the location in window.location.hash. This makes it ideal
- * for situations where you don't want to send the location to the server for
- * some reason, either because you do cannot configure it or the URL space is
- * reserved for something else.
- *
- * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#createhashhistory
+/**
+ * Hash history stores the location in window.location.hash. This makes it ideal
+ * for situations where you don't want to send the location to the server for
+ * some reason, either because you do cannot configure it or the URL space is
+ * reserved for something else.
+ *
+ * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#createhashhistory
  */
 
 function createHashHistory(options) {
@@ -4368,11 +4367,11 @@ function createHashHistory(options) {
   };
   return history;
 }
-/**
- * Memory history stores the current location in memory. It is designed for use
- * in stateful non-browser environments like tests and React Native.
- *
- * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#creatememoryhistory
+/**
+ * Memory history stores the current location in memory. It is designed for use
+ * in stateful non-browser environments like tests and React Native.
+ *
+ * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#creatememoryhistory
  */
 
 function createMemoryHistory(options) {
@@ -4557,10 +4556,10 @@ function createEvents() {
 function createKey() {
   return Math.random().toString(36).substr(2, 8);
 }
-/**
- * Creates a string URL path from the given pathname, search, and hash components.
- *
- * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#createpath
+/**
+ * Creates a string URL path from the given pathname, search, and hash components.
+ *
+ * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#createpath
  */
 
 
@@ -4575,10 +4574,10 @@ function createPath(_ref) {
   if (hash && hash !== '#') pathname += hash.charAt(0) === '#' ? hash : '#' + hash;
   return pathname;
 }
-/**
- * Parses a string URL path into its separate pathname, search, and hash components.
- *
- * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#parsepath
+/**
+ * Parses a string URL path into its separate pathname, search, and hash components.
+ *
+ * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#parsepath
  */
 
 function parsePath(path) {
@@ -12457,15 +12456,15 @@ const postAuthor = (0,external_wp_element_namespaceObject.createElement)(externa
  * WordPress dependencies
  */
 
-const blockDefault = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
+const blockMeta = (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.SVG, {
   xmlns: "http://www.w3.org/2000/svg",
   viewBox: "0 0 24 24"
 }, (0,external_wp_element_namespaceObject.createElement)(external_wp_primitives_namespaceObject.Path, {
-  "fill-rule": "evenodd",
+  fillRule: "evenodd",
   d: "M8.95 11.25H4v1.5h4.95v4.5H13V18c0 1.1.9 2 2 2h3c1.1 0 2-.9 2-2v-3c0-1.1-.9-2-2-2h-3c-1.1 0-2 .9-2 2v.75h-2.55v-7.5H13V9c0 1.1.9 2 2 2h3c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3c-1.1 0-2 .9-2 2v.75H8.95v4.5ZM14.5 15v3c0 .3.2.5.5.5h3c.3 0 .5-.2.5-.5v-3c0-.3-.2-.5-.5-.5h-3c-.3 0-.5.2-.5.5Zm0-6V6c0-.3.2-.5.5-.5h3c.3 0 .5.2.5.5v3c0 .3-.2.5-.5.5h-3c-.3 0-.5-.2-.5-.5Z",
-  "clip-rule": "evenodd"
+  clipRule: "evenodd"
 }));
-/* harmony default export */ var block_meta = (blockDefault);
+/* harmony default export */ var block_meta = (blockMeta);
 
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/post-date.js
 
