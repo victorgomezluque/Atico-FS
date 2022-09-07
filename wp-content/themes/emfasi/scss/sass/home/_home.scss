@@ -7,9 +7,9 @@
 
   .site-main {
     display: flex;
-    flex-direction: column-reverse;	
+    flex-direction: column-reverse;
     @include desktop {
-		flex-direction: inherit;
+      flex-direction: inherit;
     }
 
     .left {
@@ -487,8 +487,8 @@
     }
   }
 }
-#home{
-  .cont-logo{
+#home {
+  .cont-logo {
     display: none;
   }
 }
