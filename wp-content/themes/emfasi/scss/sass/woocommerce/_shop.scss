@@ -101,6 +101,18 @@
     display: none;
 }
 
-#comments{
+#comments {
     display: none;
+}
+.product a.woocommerce-loop-product__link {
+    pointer-events: none;
+    cursor: default;
+}
+
+li.product_cat-tienda {
+    @include desktop {
+        width: 300px !important;
+        margin: 50px !important;
+        margin-top: 0px !important;
+    }
 }

@@ -78,7 +78,7 @@ $sponsors = get_posts($args_sponsors);
                             </div>
                         </a>
                         <a class="tile" href="/#">
-                            <h3 class="title bar">Classificación</h3>
+                            <h3 class="title bar">Calendario</h3>
                             <p>Descubre la classificación y los Quintetos de cada jornada den nuestro club</p>
                             <div class="img">
                                 <img src="/wp-content/uploads/2022/08/calendar-v3.png">

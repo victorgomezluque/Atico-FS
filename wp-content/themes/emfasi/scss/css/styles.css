@@ -5361,6 +5361,11 @@ body.home .cont--more-info {
 *::-webkit-scrollbar-thumb {
   background-color: #000000; }
 
+@media only screen and (min-width: 1024px) {
+  iframe {
+    width: 350%;
+    height: 900px; } }
+
 .section__text-image {
   padding-bottom: 25px; }
   @media only screen and (min-width: 1366px) {
@@ -6257,5 +6262,15 @@ body.home .cont--more-info {
 
 #comments {
   display: none; }
+
+.product a.woocommerce-loop-product__link {
+  pointer-events: none;
+  cursor: default; }
+
+@media only screen and (min-width: 1024px) {
+  li.product_cat-tienda {
+    width: 300px !important;
+    margin: 50px !important;
+    margin-top: 0px !important; } }
 
 /*# sourceMappingURL=styles.css.map */
