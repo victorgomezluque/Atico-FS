@@ -6273,4 +6273,18 @@ body.home .cont--more-info {
     margin: 50px !important;
     margin-top: 0px !important; } }
 
+.woocommerce .related {
+  display: none !important; }
+
+.alg-product-input-fields-table,
+.alg-product-input-fields-table tr,
+.alg-product-input-fields-table td {
+  display: block; }
+
+.woocommerce div.product form.cart {
+  display: grid; }
+
+.woocommerce .product_meta {
+  display: none; }
+
 /*# sourceMappingURL=styles.css.map */

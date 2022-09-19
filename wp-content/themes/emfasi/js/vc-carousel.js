@@ -11,6 +11,7 @@
     var owl_project_related = $(".cont--project-related .grid-index");
     var owl_projects_grid_index = $(".projects-grid-index");
     var owl_section_opinions = $(".section__opinions .cont__opinions");
+    var related_products = $(".woocommerce ul.products");
 
     setTimeout(function () {
 
