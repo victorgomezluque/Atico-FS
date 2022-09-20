@@ -1,0 +1,11 @@
+.partidos {
+  .partidos-categorias {
+    @include desktop {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      div {
+        padding: 50px;
+      }
+    }
+  }
+}

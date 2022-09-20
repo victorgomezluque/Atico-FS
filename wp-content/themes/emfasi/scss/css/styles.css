@@ -5366,6 +5366,13 @@ body.home .cont--more-info {
     width: 350%;
     height: 900px; } }
 
+@media only screen and (min-width: 1024px) {
+  .partidos .partidos-categorias {
+    display: grid;
+    grid-template-columns: 50% 50%; }
+    .partidos .partidos-categorias div {
+      padding: 50px; } }
+
 .section__text-image {
   padding-bottom: 25px; }
   @media only screen and (min-width: 1366px) {
