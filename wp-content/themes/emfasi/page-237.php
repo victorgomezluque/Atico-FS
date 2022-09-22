@@ -24,7 +24,13 @@ get_header();
             $args = array(
                 'post_type' => 'partidos',
                 'posts_per_page' => -1,
-                
+                'meta_query' => array(
+                    array(
+                        'key' => 'categorias_partidos', // name of custom field
+                        'value' => 'senior_a', // matches exactly "123", not just 123. This prevents a match for "1234"
+                        'compare' => 'LIKE'
+                    )
+                ),
             );
 
             $partidos = get_posts($args);
