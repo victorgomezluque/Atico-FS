@@ -70,7 +70,7 @@ $sponsors = get_posts($args_sponsors);
                 <div class="divider"></div>
                 <div class="tiles-box">
                     <div class="tiles">
-                        <a class="tile" href="/#">
+                        <a class="tile" href="/partidos">
                             <h3 class="title bar">Partidos</h3>
                             <p>Descubre los partidos del Atico FS</p>
                             <div class="img">
