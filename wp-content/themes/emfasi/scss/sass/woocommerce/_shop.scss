@@ -109,6 +109,16 @@
     cursor: default;
 }
 
+.product.post-243 a.woocommerce-loop-product__link,
+.product.post-244 a.woocommerce-loop-product__link,
+.product.post-242 a.woocommerce-loop-product__link {
+    pointer-events: auto !important;
+    cursor: default;
+    .add_to_cart_button {
+        display: none !important;
+    }
+}
+
 li.product_cat-tienda {
     @include desktop {
         width: 300px !important;
