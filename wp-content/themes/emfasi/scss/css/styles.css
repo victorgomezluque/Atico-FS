@@ -6282,10 +6282,11 @@ body.home .cont--more-info {
 .product.post-242 a.woocommerce-loop-product__link {
   pointer-events: auto !important;
   cursor: default; }
-  .product.post-243 a.woocommerce-loop-product__link .add_to_cart_button,
-  .product.post-244 a.woocommerce-loop-product__link .add_to_cart_button,
-  .product.post-242 a.woocommerce-loop-product__link .add_to_cart_button {
-    display: none !important; }
+
+.woocommerce ul.products li.product.post-242 .button,
+.woocommerce ul.products li.product.post-243 .button,
+.woocommerce ul.products li.product.post-244 .button {
+  display: none !important; }
 
 @media only screen and (min-width: 1024px) {
   li.product_cat-tienda {

@@ -114,9 +114,12 @@
 .product.post-242 a.woocommerce-loop-product__link {
     pointer-events: auto !important;
     cursor: default;
-    .add_to_cart_button {
-        display: none !important;
-    }
+}
+
+.woocommerce ul.products li.product.post-242 .button,
+.woocommerce ul.products li.product.post-243 .button,
+.woocommerce ul.products li.product.post-244 .button {
+    display: none !important;
 }
 
 li.product_cat-tienda {
