@@ -125,46 +125,16 @@ endif;
 									<div class="menu-bottom-info">
 										<div class="menu-bottom-info--top desktop">
 											<div class="cont--xarxes-socials">
-												<a href="https://www.linkedin.com/company/1780538" class="icon icon-font-icono-icn-xxss-linkedin" target="_blank"></a>
-												<a href="https://www.instagram.com/emfasi_com/" class="icon icon-font-icono-icn-xxss-instagram" target="_blank"></a>
-											</div>
-											<div class="cont--logos">
-												<div class="cont--logo">
-													<a href="/kit-digital/" class="kitdigital-partner-menu"><img src="/wp-content/uploads/2022/02/img-logo-kitdigital.png" alt="kit-digital"></a>
-													<a href="/kit-digital/" class="kitdigital-partner-menu"><img src="/wp-content/uploads/2022/02/img-logo-kitdigital-dark.png" alt="kit-digital" class="dark"></a>
-												</div>
-												<div class="cont--logo">
-													<a href="https://www.google.com/partners/agency?id=7140245178" target="_blank">
-														<img src="/wp-content/uploads/2022/05/img-logo-google-partner.png" alt="google-partner" class="google-partner-menu">
-														<img src="/wp-content/uploads/2022/05/img-logo-google-partner-dark.png" alt="google-partner" class="google-partner-menu dark">
-													</a>
-												</div>
+												<a href="https://www.instagram.com/elaticofsc" class="icon icon-font-icono-icn-xxss-instagram" target="_blank"></a>
 											</div>
 										</div>
 										<div class="menu-bottom-info--bottom">
 											<div class="menu-bottom-info--bottom-left">
-												<?php echo do_shortcode("[content_block slug=emfasi-info]"); ?>
 											</div>
 											<div class="menu-bottom-info--top mobile">
 												<div class="cont--xarxes-socials">
-													<a href="https://www.linkedin.com/company/1780538" class="icon icon-font-icono-icn-xxss-linkedin" target="_blank"></a>
-													<a href="https://www.instagram.com/emfasi_com/" class="icon icon-font-icono-icn-xxss-instagram" target="_blank"></a>
+													<a href="https://www.instagram.com/elaticofsc" class="icon icon-font-icono-icn-xxss-instagram" target="_blank"></a>
 												</div>
-												<div class="cont--logos">
-													<div class="cont--logo">
-														<a href="/kit-digital/" class="kitdigital-partner-menu"><img src="/wp-content/uploads/2022/02/img-logo-kitdigital.png" alt="kit-digital"></a>
-														<a href="/kit-digital/" class="kitdigital-partner-menu"><img src="/wp-content/uploads/2022/02/img-logo-kitdigital-dark.png" alt="kit-digital" class="dark"></a>
-													</div>
-													<div class="cont--logo">
-														<a href="https://www.google.com/partners/agency?id=7140245178" target="_blank">
-															<img src="/wp-content/uploads/2022/05/img-logo-google-partner.png" alt="google-partner" class="google-partner-menu">
-															<img src="/wp-content/uploads/2022/05/img-logo-google-partner-dark.png" alt="google-partner" class="google-partner-menu dark">
-														</a>
-													</div>
-												</div>
-											</div>
-											<div class="menu-bottom-info--bottom-right">
-												<?php echo do_shortcode("[content_block id=1447 title_tag=h3]"); ?>
 											</div>
 										</div>
 									</div>

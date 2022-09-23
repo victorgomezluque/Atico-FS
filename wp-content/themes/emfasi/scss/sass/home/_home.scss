@@ -6,12 +6,6 @@
   background-color: $white;
 
   .site-main {
-    display: flex;
-    flex-direction: column-reverse;
-    @include desktop {
-      flex-direction: inherit;
-    }
-
     .left {
       height: 340px;
 
@@ -490,5 +484,20 @@
 #home {
   .cont-logo {
     display: none;
+  }
+}
+
+.page-id-103 {
+  //TODO: afegir-ho a totes les pagines
+  min-height: 100vh;
+  position: relative;
+  background-color: $white;
+
+  .site-main {
+    display: flex;
+    flex-direction: column-reverse;
+    @include desktop {
+      flex-direction: inherit;
+    }
   }
 }
