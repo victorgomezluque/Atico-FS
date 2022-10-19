@@ -221,6 +221,17 @@ function cdp_modal($screen = '', $profiles = array()) {
               </div>
             </div>
           </div>
+          <?php if (is_multisite()) { ?>
+            <div class="cdp-center cdp-multiple-sites-selector">
+              (<?php _e('click here to select multiple sites', 'copy-delete-posts'); ?>)
+            </div>
+            <div class="cdp-center cdp-multi-site-at-once-selector" style="display: none;">
+              <select multiple>
+                <option value="-1" selected><?php _e('this site', 'copy-delete-posts'); ?></option>
+                <?php if ($areWePro && function_exists('cdpp_get_sites')) echo cdpp_get_sites(true); ?>
+              </select>
+            </div>
+          <?php } ?>
         </div>
       </div>
 
@@ -230,7 +241,7 @@ function cdp_modal($screen = '', $profiles = array()) {
 
       <div class="cdp-center cdp-p-25-h">
         <button class="cdp-button cdp-copy-modal-button cdp-f-s-15 cdp-f-w-regular" data-cdp-btn="copy-custom" style="height:44px; width:211px;padding:0 20px;line-height: 44px;"><?php _e('Copy it!', 'copy-delete-posts'); ?></button>
-        <?php if (isset($globals) && array_key_exists('afterCopy', $globals) && $globals['afterCopy'] == '3'): ?>
+        <?php if (isset($globals) && is_array($globals) && array_key_exists('afterCopy', $globals) && $globals['afterCopy'] == '3'): ?>
         <button class="cdp-button cdp-copy-modal-button cdp-p-right-h cdp-f-s-15 cdp-f-w-regular" data-cdp-btn="copy-custom-link" style="height:44px; width:292px;padding:0 20px;line-height: 44px;margin-left: 15px !important;"><?php _e('Copy and jump to editing', 'copy-delete-posts'); ?></button>
         <?php endif; ?>
       </div>

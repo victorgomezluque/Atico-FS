@@ -31,7 +31,7 @@ $sponsors = get_posts($args_sponsors);
 <div class="page-wrapper wrapper-main" id="home">
     <main id="primary" class="site-main">
         <div class="left">
-            <div class="content">
+            <!--   <div class="content">
                 <div class="front-slide">
                     <a href="/contacto">
                         <img src="/wp-content/uploads/2022/08/IMG-20220519-WA0032.jpg" alt="">
@@ -40,10 +40,16 @@ $sponsors = get_posts($args_sponsors);
                         <img src="/wp-content/uploads/2022/08/IMG-20220519-WA0032.jpg" alt="">
                     </a>
                 </div>
-            </div>
+            </div> -->
+            <a href="/tienda">
+                <img src="/wp-content/uploads/2022/10/tienda-12.png" alt="">
+            </a>
         </div>
         <div class="right">
-            <div class="products">
+            <a href="/contacto/">
+                <img src="/wp-content/uploads/2022/10/Formulario-de-inscripcion.png" alt="">
+            </a>
+            <!--  <div class="products">
                 <div class="divider"></div>
                 <div class="features-products">
                     <h3 class="title bar"><?php _e('Productos Destacados', 'venfilter'); ?></h3>
@@ -104,29 +110,32 @@ $sponsors = get_posts($args_sponsors);
                 </div>
                 <div class="divider"></div>
                 <div class="sponsors">
-                    <h3 class="title bar"><?php _e('Sponsors', 'venfilter'); ?></h3>
+                    <h3 class="title bar"><?php //_e('Sponsors', 'venfilter'); 
+                                            ?></h3>
                     <div class="slick-sponsors">
-                        <?php
+                        <?php /*
                         foreach ($sponsors as $sponsor) {
                             $nombre_sponsor = get_field("nombre_sponsor", $sponsor->ID);
                             $imagen_sponsor = get_field("imagen_sponsor", $sponsor->ID);
-                            $url_sponsor = get_field("url_sponsor", $sponsor->ID);
+                            $url_sponsor = get_field("url_sponsor", $sponsor->ID); */
                         ?>
                             <div class="item-sponsors">
-                                <a class="item-href-sponsor" href="<?php echo $url_sponsor; ?>">
-                                    <img class="item-image-sponsor" src="<?php echo $imagen_sponsor; ?>" alt="Nombre Sponsor">
+                                <a class="item-href-sponsor" href="<?php //echo $url_sponsor; 
+                                                                    ?>">
+                                    <img class="item-image-sponsor" src="<?php //echo $imagen_sponsor; 
+                                                                            ?>" alt="Nombre Sponsor">
                                 </a>
                             </div>
 
                         <?php
-                        }
+                        //     }
                         ?>
                     </div>
                 </div>
             </div>
+        </div> -->
         </div>
-</div>
-</main><!-- #main -->
+    </main><!-- #main -->
 </div><!-- #index-wrapper -->
 
 <?php

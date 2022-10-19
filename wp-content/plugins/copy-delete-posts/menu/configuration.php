@@ -170,7 +170,7 @@ function cdp_configuration() {
 
               $preSelProf = 0;
               $gepres = get_option('_cdp_preselections', array());
-              
+
               if (array_key_exists(get_current_user_id(), $gepres)) {
                 $preSelProf = $gepres[get_current_user_id()];
               }
@@ -593,6 +593,13 @@ function cdp_configuration() {
                   <input id="cdp-o-premium-hide-tooltip"<?php echo ((!$areWePro)?' disabled="true"':''); ?> <?php echo ($areWePro && $gos['cdp-premium-hide-tooltip'] == 'true')?'checked ':''; ?> type="checkbox" class="cdp-other-inputs" name="cdp-premium-hide-tooltip" />
                   <span class="cdp-relative cdp-tooltip-premium" data-top="5"><?php _e('Hide copy tooltip on hover and only show the button', 'copy-delete-posts'); ?> <span class="cdp-premium-icon cdp-big-icon" style="right: -30px"></span></span>
                 </label>
+                <?php if (is_multisite() || !$areWePro) { ?>
+                <label for="cdp-o-premium-replace-domain">
+                  <?php if (!isset($gos['cdp-premium-replace-domain'])) $gos['cdp-premium-replace-domain'] = false; ?>
+                  <input id="cdp-o-premium-replace-domain"<?php echo ((!$areWePro)?' disabled="true"':''); ?> <?php echo ($areWePro && $gos['cdp-premium-replace-domain'] == 'true')?'checked ':''; ?> type="checkbox" class="cdp-other-inputs" name="cdp-premium-replace-domain" />
+                  <span class="cdp-relative cdp-tooltip-premium" data-top="5"><?php _e('Adjust URLs in post content for new subsite', 'copy-delete-posts'); ?> <span class="cdp-premium-icon cdp-big-icon" style="right: -30px"></span></span>
+                </label>
+                <?php } ?>
                 <label for="cdp-o-premium-import">
                   <?php if (!isset($gos['cdp-premium-import'])) $gos['cdp-premium-import'] = false; ?>
                   <input id="cdp-o-premium-import"<?php echo ((!$areWePro)?' disabled="true"':''); ?> <?php echo ($areWePro && $gos['cdp-premium-import'] == 'true')?'checked ':''; ?> type="checkbox" class="cdp-other-inputs" name="cdp-premium-import" />

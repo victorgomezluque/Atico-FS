@@ -2,8 +2,8 @@
 Contributors: CopyDeletePosts, copydelete
 Tags: Duplicate post, Copy posts, Copy pages, Duplicate posts, Duplicate pages, Clone posts, Clone pages, Delete posts, Delete pages, Duplicator, copy post, copy page
 Requires at least: 4.6
-Tested up to: 6.0
-Stable tag: 1.3.0
+Tested up to: 6.0.2
+Stable tag: 1.3.2
 License: GPLv3
 Requires PHP: 5.6
 
@@ -11,7 +11,8 @@ Duplicate post
 
 == Description ==
 
-**Try it out on your free dummy site: Click here => [https://tastewp.com/plugins/copy-delete-posts](https://tastewp.com/plugins/copy-delete-posts?redirect-menu=copy-delete-posts)**.
+**Try it out on your free dummy site: Click here => [https://tastewp.com/plugins/copy-delete-posts](https://demo.tastewp.com/cdp).**
+(this trick works for all plugins in the WP repo - just replace "wordpress" with "tastewp" in the URL)
 
 Massively increase your WordPress productivity!
 
@@ -138,6 +139,9 @@ Other duplicate post plugins mostly only allow you to duplicate post to the same
 = Is this plugin GDPR friendly? =
 Copy Delete Posts WordPress plugin doesn’t store any site visitor information so it is completely GDPR friendly.
 
+= ACF incompatibility =
+ACF is not fully supported by Copy Delete Post, as ACF is something more than a simple post. The plugin can only cop native posts and pages ( that are aligned with WordPress standards ). ACF does not stick with these standards as they put multiple posts attached to one post ID, which is visible on the list, while others are hidden. So it’s tricky but our co founder is working on adding ACF plugin in the future ( c priority ).
+
 = Is the plugin also available in my language? =
 So far we have translated the plugin into these languages:
 
@@ -172,6 +176,28 @@ Vietnamese: [Sao chép bài đăng, sao chép trang, sao chép bài đăng tùy 
 8. Copy from Gutenberg editor
 
 == Changelog ==
+
+= 1.3.2 =
+* NEW: Added automatic creation of non-existing categories for subsite duplication
+* Fixed issues with assigning taxonomy on new posts
+* Resolved issues with featured image duplication between sites
+* Tested with WordPress 6.0.2 + Multisite (PHP 8)
+
+= 1.3.1 =
+* Version fully tested with WordPress 6.0.1 + Multisite
+* Removed unnecessary debug code
+* Fixed issues with falsive attachment duplication
+* Fixed issue inside tooltip while redirect to edit screen option was enabled
+* Fixed issue while during duplication notice "Please select settings" appeared
+* Fixed issue with multi-post duplication to different subsite
+* Fixed post type restrictions, copy option won't appear in dropdown while copying is forbidden
+* Fixed corner cases where copy action button was not displayed in subsites
+* Fixed issues with backslashes and unicode characters - they should copied correctly now
+* Default WordPress Posts and Pages are not longer treated as custom posts
+* Resolved issues with scheduled clean-ups - sometimes this option settings were blank
+* Resolved all deprecated warnings with PHP 8+
+* NEW: Added automatic URL adjustment for multisites (premium)
+* NEW: Added possibility to copy into multiple subsites at once - inside bulk modal (premium)
 
 = 1.3.0 =
 * Version fully tested with WordPress 6.0
@@ -339,20 +365,8 @@ Vietnamese: [Sao chép bài đăng, sao chép trang, sao chép bài đăng tùy 
 * Initial release
 
 == Upgrade Notice ==
-= 1.3.0 =
-* Version fully tested with WordPress 6.0
-* Removed unnecessary error logging
-* Adjusted styles of forms in copy modal
-* Fixed conflict issues for our dropdown solution
-* Fixed conflict issues with other tooltipster plugins
-* Fixed issue when tooltip was displayed without content on SiteGround Hosting
-* Fixed automatic profile preselection of options in modal and tooltips
-* Adjusted tooltip to not "Flash" on the screen
-* Fixed issue when user could not extend duplication options in tooltip
-* Modified method of inserting tooltip content to resolve some conflicts
-* Fixed error in posts menu for users without access to CDP settings (Thank you @saccones)
-* Added "Select all" option to advanced duplication options (tooltip & modal)
-* Adjusted plugin performance depending on user's log feedback
-* Fixed issues with performance checking on quickest websites
-* Added dedicated solution for Elementor posts and added duplication of cached CSS file
-* Added support for SeedProd builder, added dedicated duplication for CSS files
+= 1.3.2 =
+* NEW: Added automatic creation of non-existing categories for subsite duplication
+* Fixed issues with assigning taxonomy on new posts
+* Resolved issues with featured image duplication between sites
+* Tested with WordPress 6.0.2 + Multisite (PHP 8)

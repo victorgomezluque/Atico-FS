@@ -292,7 +292,7 @@ function cdp_tooltip_content($profiles = array()) {
 
       <div class="cdp-center cdp-padding" style="min-width: 420px; padding-bottom: 10px;">
         <button class="cdp-button cdp-tooltip-btn-copy cdp-f-s-15 cdp-f-s-regular" data-cdp-btn="copy-custom" style="height:44px; width:211px;padding:0 20px;line-height: 44px;border-radius: 3px;"><?php _e('Copy it!', 'copy-delete-posts'); ?></button>
-        <?php if (isset($globals) && array_key_exists('afterCopy', $globals) && $globals['afterCopy'] == '3'): ?>
+        <?php if (isset($globals) && is_array($globals) && array_key_exists('afterCopy', $globals) && $globals['afterCopy'] == '3'): ?>
         <button class="cdp-button cdp-tooltip-btn-copy cdp-f-s-15 cdp-f-s-regular" data-cdp-btn="copy-custom-link" style="height:44px; width:292px;padding:0 20px;line-height: 44px;border-radius: 3px;margin-left: 15px !important;"><?php _e('Copy and jump to editing', 'copy-delete-posts'); ?></button>
         <?php endif; ?>
       </div>

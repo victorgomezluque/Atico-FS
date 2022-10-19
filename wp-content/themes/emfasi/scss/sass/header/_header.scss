@@ -1,4 +1,5 @@
-body.color-menu_prinicipal-white {}
+body.color-menu_prinicipal-white {
+}
 
 header.site-header {
     width: 100%;
@@ -44,6 +45,7 @@ header.site-header {
         }
 
         .cont--header-right {
+            display: none !important;
             @include flexbox;
             flex-grow: 1;
             justify-content: flex-end;
@@ -58,7 +60,7 @@ header.site-header {
 
             .cont--header-right-item {
                 @include transition;
-                
+
                 &:hover {
                     cursor: pointer;
                     background-color: $light-blue;
@@ -75,11 +77,14 @@ header.site-header {
                 }
             }
 
-            .cont--user {}
+            .cont--user {
+            }
 
-            .cont--cart {}
+            .cont--cart {
+            }
 
-            .cont--menu__open {}
+            .cont--menu__open {
+            }
 
             .header-title-page {
                 display: none;
@@ -91,9 +96,9 @@ header.site-header {
                 text-transform: uppercase;
 
                 align-items: center;
-                
+
                 padding-right: 17px;
-                
+
                 @include desktop {
                     @include flexbox;
                 }

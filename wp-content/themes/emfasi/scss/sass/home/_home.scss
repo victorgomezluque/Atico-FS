@@ -1,4 +1,4 @@
-#home,
+//#home,
 #contact {
   //TODO: afegir-ho a totes les pagines
   min-height: 100vh;
@@ -481,6 +481,7 @@
     }
   }
 }
+
 #home {
   .cont-logo {
     display: none;
@@ -499,5 +500,21 @@
     @include desktop {
       flex-direction: inherit;
     }
+  }
+}
+
+#home {
+  main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    @include desktop {
+      grid-template-rows: 50% 50%;
+    }
+  }
+}
+
+aside {
+  &#secondary {
+    display: none;
   }
 }
