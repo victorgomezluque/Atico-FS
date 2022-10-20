@@ -1,4 +1,4 @@
-//#home,
+#home,
 #contact {
   //TODO: afegir-ho a totes les pagines
   min-height: 100vh;
@@ -6,6 +6,12 @@
   background-color: $white;
 
   .site-main {
+    display: flex;
+    flex-direction: column-reverse;
+    @include desktop {
+      flex-direction: inherit;
+    }
+
     .left {
       height: 340px;
 
@@ -404,13 +410,13 @@
             flex-direction: column;
 
             position: relative;
-            width: 50%;
+            width: 100%;
             text-decoration: none;
 
             min-height: 190px;
             padding: 50px 20px 40px;
             @include Body-Mobile;
-            background-color: $white-two;
+            background: url("/wp-content/uploads/2022/10/Formulario-de-inscripcion.png");
 
             @include tablet {
               padding: 50px 50px 40px;
@@ -419,10 +425,6 @@
             @include desktop {
               min-height: 425px;
               padding: 80px 50px 105px;
-            }
-
-            &:hover {
-              background-color: rgba(rgb(238, 255, 0), 0.5);
             }
 
             &:first-child {
@@ -481,40 +483,8 @@
     }
   }
 }
-
 #home {
   .cont-logo {
-    display: none;
-  }
-}
-
-.page-id-103 {
-  //TODO: afegir-ho a totes les pagines
-  min-height: 100vh;
-  position: relative;
-  background-color: $white;
-
-  .site-main {
-    display: flex;
-    flex-direction: column-reverse;
-    @include desktop {
-      flex-direction: inherit;
-    }
-  }
-}
-
-#home {
-  main {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    @include desktop {
-      grid-template-rows: 50% 50%;
-    }
-  }
-}
-
-aside {
-  &#secondary {
     display: none;
   }
 }
