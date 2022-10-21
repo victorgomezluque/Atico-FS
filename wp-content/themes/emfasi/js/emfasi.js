@@ -2,7 +2,6 @@
 
 
     $(document).ready(function () {
-        alert("hla");
         $('.slick-products').slick({
             infinite: false,
             slidesToShow: 4,
@@ -38,6 +37,7 @@
             }
             ]
         });
+        
         $('.slick-sponsors').slick({
             infinite: true,
             slidesToShow: 4,
