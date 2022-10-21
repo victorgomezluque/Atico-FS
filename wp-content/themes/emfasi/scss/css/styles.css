@@ -1551,8 +1551,10 @@ body.menu-open {
   display: grid;
   grid-template-rows: 60% 10% 40%; }
   #home .site-main .home-categories {
-    display: grid;
-    grid-template-columns: 50% 50%; }
+    display: grid; }
+    @media only screen and (min-width: 1024px) {
+      #home .site-main .home-categories {
+        grid-template-columns: 50% 50%; } }
     #home .site-main .home-categories .home-categories-cta {
       position: relative;
       top: 50%;
@@ -1571,7 +1573,7 @@ body.menu-open {
     background-attachment: scroll;
     min-width: 1903px;
     left: 0px;
-    width: 1903px; }
+    width: 748px; }
 
 .instagram {
   position: absolute;
