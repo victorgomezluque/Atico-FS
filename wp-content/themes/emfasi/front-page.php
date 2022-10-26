@@ -50,3 +50,6 @@ $sponsors = get_posts($args_sponsors);
         </div>
     </main><!-- #main -->
 </div><!-- #index-wrapper -->
+<!--<div class="instagram">
+    <img src="/wp-content/uploads/2022/10/instgram.png" alt="/wp-content/uploads/2022/10/instgram.png">
+</div>-->
