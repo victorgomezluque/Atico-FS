@@ -1,5 +1,5 @@
-#home,
-#contact {
+#contact,
+.page-id-103 {
   //TODO: afegir-ho a totes les pagines
   min-height: 100vh;
   position: relative;
@@ -7,11 +7,8 @@
 
   .site-main {
     display: flex;
-    flex-direction: column-reverse;
-    @include desktop {
-      flex-direction: inherit;
-    }
 
+    flex-direction: row;
     .left {
       height: 340px;
 
@@ -483,8 +480,69 @@
     }
   }
 }
-#home {
+.home {
   .cont-logo {
+    display: none !important;
+  }
+}
+
+.home-categories {
+  display: grid;
+  @include tablet {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+.instagram {
+  img {
+    width: 100px;
+    height: 60px !important;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+  }
+}
+
+.home-banner-mobile {
+  display: block;
+  @include tablet {
     display: none;
   }
 }
+.home-banner-desktop {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+}
+
+.home-categories-contact-mobile {
+  display: block;
+  @include tablet {
+    display: none;
+  }
+}
+.home-categories-contact-desktop {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+}
+
+.home-banner,
+.home-categories {
+  img {
+    width: 100%;
+  }
+}
+
+.home-text {
+  background-size: contain;
+  background-repeat: repeat;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("/wp-content/uploads/2022/10/FANATICO.png");
+  background-attachment: scroll;
+  min-width: 1903px;
+  left: 0px;
+  width: 1903px;
+} 
