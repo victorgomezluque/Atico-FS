@@ -211,10 +211,40 @@ a.page-numbers {
     }
 }
 
-.mini-cart {
+.home {
+    .cont--header-right-item.mini-cart {
+        margin-right: 10px !important;
+        :hover {
+            background-color: transparent !important;
+        }
+        img {
+            width: 66px;
+            height: 66px !important;
+            border: 5px solid transparent;
+            @include desktop {
+                width: 100px;
+                height: 100px !important;
+            }
+        }
+    }
+}
+
+.cont--header-right-item.mini-cart {
     margin-right: 10px !important;
+
+    @include desktop {
+        border: 10px solid transparent;
+    }
+    :hover {
+        background-color: transparent !important;
+    }
     img {
-        width: 100px;
-        height: 100px;
+        width: 66px;
+        height: 66px !important;
+        border: 5px solid transparent;
+        @include desktop {
+            width: 80px;
+            height: 80px !important;
+        }
     }
 }

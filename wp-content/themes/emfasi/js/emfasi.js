@@ -37,7 +37,7 @@
             }
             ]
         });
-        
+
         $('.slick-sponsors').slick({
             infinite: true,
             slidesToShow: 4,
@@ -402,6 +402,7 @@
             }
         }
 
+       
 
 
     });

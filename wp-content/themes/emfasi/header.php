@@ -91,7 +91,7 @@ endif;
 							*/
 								?>
 								<div class="cont--header-right-item mini-cart">
-									<a href="/checkout"><img src="/wp-content/uploads/2022/10/icon-minicart-e1666878761324-removebg-preview.png" alt="/wp-content/uploads/2022/10/icon-minicart-e1666878761324-removebg-preview.png"></a>
+									<a href="/carrito/"><img src="/wp-content/uploads/2022/10/icon-tienda_preview_rev_1.png" alt="/wp-content/uploads/2022/10/icon-tienda_preview_rev_1.png"></a>
 								</div>
 								<div class="cont--header-right-item cont--menu__open">
 									<input class="menu-icon__cheeckbox" type="checkbox">
@@ -136,6 +136,7 @@ endif;
 												</div>
 											</div>
 										</div>
+										<img src="/wp-content/uploads/2022/09/IMG-20220829-WA0006-removebg-preview.png" alt="/wp-content/uploads/2022/09/IMG-20220829-WA0006-removebg-preview.png" class="img-mobile-menu">
 									</div>
 								</div>
 							</nav>

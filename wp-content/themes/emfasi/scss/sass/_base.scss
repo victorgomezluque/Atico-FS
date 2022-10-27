@@ -8,7 +8,7 @@
 768px - 1366 - mida tablet
 1399 - 1920 mida desktop
 */
-html{
+html {
     overflow: auto;
 }
 .entry-title {
@@ -88,6 +88,14 @@ h4 {
 }
 
 table {
+}
+
+.img-mobile-menu {
+    display: block;
+    margin: auto !important;
+    @include tablet {
+        display: none;
+    }
 }
 img {
     height: 100% !important;

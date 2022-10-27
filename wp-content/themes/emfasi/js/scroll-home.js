@@ -8,4 +8,9 @@
             console.log(background_posotion_number);
         }, 10);
     });
+
+    $('.mini-cart img').on('mouseover', function () {
+        $(this).find('img').attr('src', '/wp-content/uploads/2022/10/icon-tienda_preview_rev_1.png');
+    });
+
 }(jQuery));
