@@ -743,7 +743,6 @@ header.site-header {
           header.site-header .cont--header .wrapper--logo a .cont-logo img {
             max-width: 150px; } }
     header.site-header .cont--header .cont--header-right {
-      display: none !important;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -6595,8 +6594,7 @@ body.home .cont--more-info {
 
 @media only screen and (min-width: 768px) {
   .woocommerce.columns-3 {
-    display: grid;
-    grid-template-columns: 0% 20% 80%; } }
+    display: grid; } }
 .woocommerce .slick-products-shop {
   display: grid;
   grid-template-columns: 33% 33% 33%;
@@ -6615,7 +6613,7 @@ body.home .cont--more-info {
   @media only screen and (min-width: 768px) {
     .woocommerce .slick-products-shop {
       display: grid;
-      grid-template-columns: 50% 50%;
+      grid-template-columns: 20% auto;
       border-bottom: solid 1px white; }
       .woocommerce .slick-products-shop .item {
         margin-bottom: 15px; } }
@@ -6662,12 +6660,22 @@ body.home .cont--more-info {
 #comments {
   display: none; }
 
+@media only screen and (min-width: 1024px) {
+  .woocommerce ul.products li.product {
+    padding: 45px !important; } }
+
 .woocommerce ul.products li.product .button {
   display: none; }
 
+.woocommerce ul.products li.product.post-246 .button,
+.woocommerce ul.products li.product.post-247 .button,
+.woocommerce ul.products li.product.post-248 .button,
 .woocommerce ul.products li.product.post-255 .button {
   display: block !important; }
 
+.product.post-246 a.woocommerce-loop-product__link,
+.product.post-247 a.woocommerce-loop-product__link,
+.product.post-248 a.woocommerce-loop-product__link,
 .product.post-255 a.woocommerce-loop-product__link {
   pointer-events: none;
   cursor: default; }
@@ -6725,7 +6733,28 @@ body.home .cont--more-info {
 .woocommerce-variation-add-to-cart {
   display: grid; }
 
+.product-name,
+.product-name a,
+.added_to_cart.wc-forward {
+  color: #000000 !important; }
+
+a.page-numbers {
+  color: #000000 !important; }
+  a.page-numbers.next {
+    color: #000000 !important; }
+
 .checkout-button {
-  background-color: #ffee00; }
+  background-color: #ffee00 !important;
+  color: black !important; }
+
+.form-row.place-order .button {
+  background-color: #ffee00 !important;
+  color: black !important; }
+
+.mini-cart {
+  margin-right: 10px !important; }
+  .mini-cart img {
+    width: 100px;
+    height: 100px; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 /**
  * emfasi functions and definitions.
  *

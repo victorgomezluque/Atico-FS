@@ -45,7 +45,6 @@ header.site-header {
         }
 
         .cont--header-right {
-            display: none !important;
             @include flexbox;
             flex-grow: 1;
             justify-content: flex-end;

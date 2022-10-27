@@ -90,9 +90,8 @@ endif;
 						</div>
 							*/
 								?>
-
-								<div class="header-title-page">
-									<?php echo get_the_title(); ?>
+								<div class="cont--header-right-item mini-cart">
+									<a href="/checkout"><img src="/wp-content/uploads/2022/10/icon-minicart-e1666878761324-removebg-preview.png" alt="/wp-content/uploads/2022/10/icon-minicart-e1666878761324-removebg-preview.png"></a>
 								</div>
 								<div class="cont--header-right-item cont--menu__open">
 									<input class="menu-icon__cheeckbox" type="checkbox">
