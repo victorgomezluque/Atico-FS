@@ -9,6 +9,9 @@
     display: flex;
 
     flex-direction: column-reverse;
+    @include desktop {
+      flex-direction: initial;
+    }
     .left {
       height: 340px;
 
@@ -489,21 +492,21 @@
 
 .home-categories {
   display: grid;
-  @include tablet {
+  @include desktop{
     grid-template-columns: 50% 50%;
   }
 }
 
 .instagram {
   img {
-    width: 60px;
-    height: 60px !important;
+    width: 100px !important;
+    height: auto !important;
     position: fixed;
     right: 11px;
     bottom: 8px;
     @include desktop {
-      width: 60px;
-      height: 60px !important;
+      width: 100px !important;
+      height: auto !important;
       position: fixed;
       right: 50px;
       bottom: 50px;
@@ -532,7 +535,7 @@
 }
 .home-categories-contact-desktop {
   display: none;
-  @include tablet {
+  @include tablet{
     display: block;
   }
 }
