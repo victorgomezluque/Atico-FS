@@ -136,6 +136,12 @@ endif;
 												</div>
 											</div>
 										</div>
+										<div class="footer--bottom">
+											<div class="footer--bottom-left">
+												<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-column-left')) : endif; ?>
+											</div>
+											
+										</div>
 										<img src="/wp-content/uploads/2022/09/IMG-20220829-WA0006-removebg-preview.png" alt="/wp-content/uploads/2022/09/IMG-20220829-WA0006-removebg-preview.png" class="img-mobile-menu">
 									</div>
 								</div>

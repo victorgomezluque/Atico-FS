@@ -1,0 +1,52 @@
+.partidos-senior-a {
+    iframe {
+        border: none;
+    }
+    @include desktop {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        iframe {
+            width: 100%;
+            height: 500px;
+            padding: 35px;
+        }
+    }
+}
+
+.resultados-senior-a {
+    iframe {
+        border: none;
+        width: 100%;
+        height: 900px;
+    }
+    @include desktop {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        iframe {
+            width: 100%;
+            height: 900px;
+            padding: 35px;
+        }
+    }
+}
+
+.button-link {
+    position: fixed;
+    bottom: 0px;
+    display: block;
+    width: 100%;
+    margin: auto;
+    left: 0%;
+    display: flex;
+    justify-content: space-around;
+    background: black;
+    a {
+        color: white;
+        padding: 10px;
+        text-align: center;
+        border-radius: 50px;
+    }
+    @include desktop {
+        display: none;
+    }
+}

@@ -1529,6 +1529,16 @@ body.menu-open {
   .cont--menu__open:hover span:last-of-type {
     width: 20px; } }
 
+#menu-menu-politicas {
+  display: flex;
+  padding-left: 0px; }
+  #menu-menu-politicas li {
+    list-style: none; }
+    #menu-menu-politicas li a {
+      color: black; }
+    #menu-menu-politicas li#menu-item-485 {
+      margin-left: 10px; }
+
 .main-navigation.show {
   opacity: 1;
   visibility: visible;
@@ -5767,11 +5777,6 @@ body.home .cont--more-info {
   background-color: #000000; }
 
 @media only screen and (min-width: 1024px) {
-  iframe {
-    width: 350%;
-    height: 900px; } }
-
-@media only screen and (min-width: 1024px) {
   .partidos .partidos-categorias {
     display: grid;
     grid-template-columns: 50% 50%; }
@@ -5821,6 +5826,49 @@ body.home .cont--more-info {
 .gallery > img:nth-child(4) {
   clip-path: polygon(50% 50%, 1.2em 0.5em, 1em 0, 0 0, 0 100%, 1em 100%, 1.2em calc(100% - 0.5em));
   --_x: calc(-1 * var(--g)); }
+
+.partidos-senior-a iframe {
+  border: none; }
+@media only screen and (min-width: 1024px) {
+  .partidos-senior-a {
+    display: grid;
+    grid-template-columns: 50% 50%; }
+    .partidos-senior-a iframe {
+      width: 100%;
+      height: 500px;
+      padding: 35px; } }
+
+.resultados-senior-a iframe {
+  border: none;
+  width: 100%;
+  height: 900px; }
+@media only screen and (min-width: 1024px) {
+  .resultados-senior-a {
+    display: grid;
+    grid-template-columns: 50% 50%; }
+    .resultados-senior-a iframe {
+      width: 100%;
+      height: 900px;
+      padding: 35px; } }
+
+.button-link {
+  position: fixed;
+  bottom: 0px;
+  display: block;
+  width: 100%;
+  margin: auto;
+  left: 0%;
+  display: flex;
+  justify-content: space-around;
+  background: black; }
+  .button-link a {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px; }
+  @media only screen and (min-width: 1024px) {
+    .button-link {
+      display: none; } }
 
 .section__text-image {
   padding-bottom: 25px; }

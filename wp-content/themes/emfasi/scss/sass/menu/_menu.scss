@@ -689,3 +689,17 @@ body {
     }
   }
 }
+
+#menu-menu-politicas {
+  display: flex;
+  padding-left: 0px;
+  li {
+    list-style: none;
+    a {
+      color: black;
+    }
+    &#menu-item-485 {
+      margin-left: 10px;
+    }
+  }
+}
