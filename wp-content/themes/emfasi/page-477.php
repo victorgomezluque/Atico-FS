@@ -17,7 +17,7 @@ get_header();
 ?>
 
 <div class="page-wrapper wrapper-main container" id="home">
-    <h2>Calendario Senior A</h2>
+    <h2>CALENDARIO SENIOR A</h2>
     <main id="primary" class="site-main">
         <div class="button-link">
             <a href="#partido">Ir a partido</a>
