@@ -5783,6 +5783,54 @@ body.home .cont--more-info {
     .partidos .partidos-categorias div {
       padding: 50px; } }
 
+.page-id-513 .site-main {
+  padding-left: 0px !important;
+  padding-right: 0px !important; }
+  .page-id-513 .site-main .sponsors {
+    display: grid; }
+    @media only screen and (min-width: 768px) {
+      .page-id-513 .site-main .sponsors {
+        grid-template-columns: 33% 33% 33%; } }
+    .page-id-513 .site-main .sponsors .sponsor {
+      width: 100%;
+      margin: auto;
+      padding-top: 20px;
+      min-width: 100%; }
+      @media only screen and (min-width: 768px) {
+        .page-id-513 .site-main .sponsors .sponsor {
+          border: none;
+          padding: 0px; } }
+      .page-id-513 .site-main .sponsors .sponsor .sponsor-title {
+        border-bottom: 1px solid #0000004d; }
+        .page-id-513 .site-main .sponsors .sponsor .sponsor-title::after {
+          content: " ";
+          display: block;
+          height: 10px;
+          width: 2px;
+          background: #0000004d;
+          position: absolute;
+          left: 50%; }
+          @media only screen and (min-width: 768px) {
+            .page-id-513 .site-main .sponsors .sponsor .sponsor-title::after {
+              display: none; } }
+        @media only screen and (min-width: 768px) {
+          .page-id-513 .site-main .sponsors .sponsor .sponsor-title {
+            display: none;
+            border: none; } }
+      .page-id-513 .site-main .sponsors .sponsor a {
+        display: flex;
+        justify-content: center; }
+        @media only screen and (min-width: 768px) {
+          .page-id-513 .site-main .sponsors .sponsor a {
+            display: block; } }
+        .page-id-513 .site-main .sponsors .sponsor a img {
+          padding: 20px;
+          max-width: 350px; }
+          @media only screen and (min-width: 768px) {
+            .page-id-513 .site-main .sponsors .sponsor a img {
+              width: 100%;
+              padding: 10px; } }
+
 .gallery {
   --g: 8px;
   /* the gap */

@@ -30,7 +30,7 @@ get_header();
 
                 </div>
             </a>
-            <a href="/calendario-senior-a-femenino/ ">
+            <a href="/calendario-senior-a-femenino/">
                 <div class="Femenino-A partido">
                     <h2>Femenino</h2>
                 </div>

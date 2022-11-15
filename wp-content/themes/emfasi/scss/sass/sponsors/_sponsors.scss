@@ -1,0 +1,61 @@
+.page-id-513 {
+    .site-main {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+
+        .sponsors {
+            display: grid;
+
+            @include tablet {
+                grid-template-columns: 33% 33% 33%;
+            }
+            .sponsor {
+                width: 100%;
+                margin: auto;
+                padding-top: 20px;
+                min-width: 100%;
+                @include tablet {
+                    border: none;
+                    padding: 0px;
+                }
+
+                .sponsor-title {
+                    border-bottom: 1px solid #0000004d;
+                    &::after {
+                        content: " ";
+                        display: block;
+                        height: 10px;
+                        width: 2px;
+                        background: #0000004d;
+                        position: absolute;
+                        left: 50%;
+                        @include tablet {
+                            display: none;
+                        }
+                    }
+                    @include tablet {
+                        display: none;
+                        border: none;
+                    }
+                }
+                a {
+                    display: flex;
+                    justify-content: center;
+
+                    @include tablet {
+                        display: block;
+                    }
+
+                    img {
+                        padding: 20px;
+                        max-width: 350px;
+                        @include tablet {
+                            width: 100%;
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
