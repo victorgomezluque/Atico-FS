@@ -5831,6 +5831,37 @@ body.home .cont--more-info {
               width: 100%;
               padding: 10px; } }
 
+.sponsors-home .sponsors-home-title {
+  text-align: center; }
+  .sponsors-home .sponsors-home-title::before {
+    content: " ";
+    display: block;
+    height: 10px;
+    width: 2px;
+    background: #0000004d;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center; }
+.sponsors-home .sponsors-home-link {
+  text-align: center; }
+@media only screen and (min-width: 768px) {
+  .sponsors-home .sponsors-home-grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%; } }
+.sponsors-home .sponsors-home-grid .sponsor {
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  display: flex; }
+  .sponsors-home .sponsors-home-grid .sponsor img {
+    max-width: 350px;
+    padding: 30px;
+    width: 100%;
+    margin: auto; }
+
 .gallery {
   --g: 8px;
   /* the gap */
